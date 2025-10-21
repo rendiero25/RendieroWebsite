@@ -3,4 +3,7 @@
 
 @theme {
     --font-primary: 'Outfit', sans-serif;
+
+    --color-background: #282C38;
+    --color-black: #1e1e1e;
 }
