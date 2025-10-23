@@ -1,10 +1,25 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HeaderProvider } from "./context/HeaderContext";
+
 import Index from "./pages/Index";
+import AboutMe from "./pages/AboutMe";
+import Header from "./components/Header"; 
 
 const App = () => {
   return (
     <>
       <div className="m-0 p-0 box-border font-primary">
-        <Index />
+        <HeaderProvider>    
+          <Router>
+
+            <Header />
+            
+            <Routes>
+              <Route path="/" element={<Index />} />
+                <Route path="/about-me" element={<AboutMe />} />
+            </Routes>
+          </Router>
+        </HeaderProvider>
       </div>
     </>
   )
