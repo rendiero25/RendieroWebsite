@@ -1,13 +1,13 @@
 import { motion } from "motion/react";
 import { useNavigate } from "react-router-dom";
 
-import Rec1 from "../assets/Index/Rec1.jpg";
-import Rec3 from "../assets/Index/Rec3.jpg";
-import Rec4 from "../assets/Index/Rec4.jpg";
-import Rec5 from "../assets/Index/Rec5.jpg";
-import Rec6 from "../assets/Index/Rec6.jpg";
+import Rec1 from "../assets/Index/rec1.jpg";
+import Rec3 from "../assets/Index/rec3.jpg";
+import Rec4 from "../assets/Index/rec4.jpg";
+import Rec5 from "../assets/Index/rec5.jpg";
+import Rec6 from "../assets/Index/rec6.jpg";
 import ArrowRight from "../assets/Index/arrow-right.png";
-import Pic from "../assets/Index/Pic.jpg";
+import Pic from "../assets/Index/pic.jpg";
 import LinkedinIcon from "../assets/Index/linkedin.png";
 import GithubIcon from "../assets/Index/github.png";
 import InstagramIcon from "../assets/Index/instagram.png";
