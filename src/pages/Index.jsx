@@ -77,7 +77,7 @@ const Index = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 2 }}
-                        className="w-full lg:w-[20%] h-auto lg:h-full px-10 lg:px-5 2xl:px-10 py-8 sm:py-20 md:py-35 lg:py-8 3xl:py-10 rounded-3xl font-secondary text-3xl sm:text-6xl lg:text-xl 2xl:text-3xl 3xl:text-4xl leading-tight flex flex-col justify-center items-start gap-6 md:gap-12 lg:gap-6 hover:scale-105 hover:shadow-2xl"
+                        className="w-full lg:w-[20%] h-auto lg:h-full px-10 lg:px-5 2xl:px-10 py-8 sm:py-20 md:py-35 lg:py-8 3xl:py-10 rounded-3xl font-secondary text-3xl sm:text-6xl lg:text-xl 2xl:text-3xl leading-tight flex flex-col justify-center items-start gap-6 md:gap-12 lg:gap-6 hover:scale-105 hover:shadow-2xl"
                         style={{backgroundImage: `url(${Rec3})`, backgroundSize: "cover", backgroundPosition: "center"}}
                     >
                         <h2 className="text-white font-medium uppercase"><span className="text-[#1772FE]">Hi! I'm</span> Rendy Norman Tomaluweng</h2>
@@ -152,9 +152,9 @@ const Index = () => {
                         className="w-full lg:w-[35%] h-full px-10 lg:px-10 3xl:px-20 pt-15 py-15 sm:py-30 lg:py-15 rounded-3xl flex flex-col gap-6"
                         style={{backgroundImage: `url(${Rec6})`, backgroundSize: "cover", backgroundPosition: "center"}}
                     >        
-                        <h2 className="font-secondary text-white text-7xl lg:text-4xl 2xl:text-5xl 3xl:text-6xl font-medium leading-tight uppercase self-start">About Us</h2>              
+                        <h2 className="font-secondary text-white text-7xl lg:text-4xl 2xl:text-5xl 3xl:text-6xl font-medium leading-tight uppercase self-start">About Me</h2>              
                         
-                        <p className="text-white text-2xl sm:text-3xl lg:text-xs 2xl:text-xl 3xl:text-2xl font-normal text-left leading-normal">With an educational background in technology, 
+                        <p className="text-white text-2xl sm:text-3xl lg:text-xs 2xl:text-xl 3xl:text-xl font-normal text-left leading-normal">With an educational background in technology, 
                             I'm an experienced Front-End Web Developer 
                             skilled in HTML, CSS, TailwindCSS, JavaScript, 
                             Typescript, React JS, GSAP and Three JS. 

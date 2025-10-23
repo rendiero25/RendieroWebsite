@@ -54,6 +54,7 @@ const AboutMe = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 2 }}
+                        delay={3}
                     >
                         <p className="text-white text-2xl lg:text-xl lg:max-w-xl font-normal text-left leading-normal">With an educational background in technology, I'm an 
                             experienced Front-End Web Developer skilled in HTML, 
@@ -61,7 +62,7 @@ const AboutMe = () => {
                             and Three JS. Proficient in API integration and UI/UX 
                             design to create modern and responsive interfaces. <br /><br />
 
-                            Successfully completed over 10 projects with a 95% client 
+                            Successfully completed over 13 projects with a 95% client 
                             satisfaction rate. I focus is on building functional web 
                             applications that enhance user experiences and deliver real 
                             value to businesses.
@@ -73,6 +74,7 @@ const AboutMe = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 3 }}
+                        delay={5}
                         className="flex flex-row flex-wrap justify-start items-center gap-5 lg:max-w-lg"
                         >
                             <img src={Reactjs} alt="Reactjs" className="w-15 lg:w-10"/>
@@ -95,7 +97,8 @@ const AboutMe = () => {
                         <motion.div
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
-                            transition={{ duration: 3 }}
+                            transition={{ duration: 4 }}
+                            delay={6}
                             className="flex flex-row flex-wrap justify-start items-center gap-5 lg:max-w-lg"
                         >
                             <img src={Windsurf} alt="Windsurf" className="w-15 lg:w-10"/>
@@ -111,11 +114,18 @@ const AboutMe = () => {
                         </motion.div>
                     </div>
                     
-                    <button
-                        className="cursor-pointer bg-gradient-to-r from-[#1873FE] to-[#0E4598] px-6 py-3 rounded-xl flex flex-row justify-center items-center gap-3 hover:scale-105 hover:shadow-2xl">
-                            <span className="text-white font-medium text-xl">Download my CV</span>
-                            <img src={DownloadIcon} alt="file download" className="w-5"/>
-                    </button>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 5 }}
+                        delay={8}
+                        >
+                            <button
+                                className="cursor-pointer bg-gradient-to-r from-[#1873FE] to-[#0E4598] px-6 py-3 rounded-xl flex flex-row justify-center items-center gap-3 hover:scale-105 hover:shadow-2xl">
+                                    <span className="text-white font-medium text-xl">Download my CV</span>
+                                    <img src={DownloadIcon} alt="file download" className="w-5"/>
+                            </button>
+                    </motion.div>
                 </div>
             </div>   
         </div>
