@@ -5,6 +5,9 @@ import Index from "./pages/Index";
 import AboutMe from "./pages/AboutMe";
 import Header from "./components/Header"; 
 
+const noHeader = ["/"];
+
+
 const App = () => {
   return (
     <>
@@ -12,11 +15,11 @@ const App = () => {
         <HeaderProvider>    
           <Router>
 
-            <Header />
-            
+            {noHeader.includes(window.location.pathname) ? null : <Header />}
+
             <Routes>
               <Route path="/" element={<Index />} />
-                <Route path="/about-me" element={<AboutMe />} />
+              <Route path="/about-me" element={<AboutMe />} />
             </Routes>
           </Router>
         </HeaderProvider>
