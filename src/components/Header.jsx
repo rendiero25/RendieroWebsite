@@ -7,16 +7,16 @@ import { IoIosCloseCircle } from "react-icons/io";
 
 const Header = () => {
 
-    const { isOpen, setIsOpen } = useHeaderContext();
+    const { isOpen, setIsOpen } = useHeaderContext(false);
     const navigate = useNavigate();
 
-    const goToAboutMe = () => {navigate("/about-me");}
-    const goToPortfolio = () => {navigate("/portfolio");}
-    const goToIndex = () => {navigate("/");}
+    const goToAboutMe = () => {setIsOpen(false); navigate("/about-me");}
+    const goToPortfolio = () => {setIsOpen(false); navigate("/portfolio");}
+    const goToIndex = () => {setIsOpen(false); navigate("/");}
     
     return (
         <div className="absolute z-10 flex flex-row justify-between items-center pt-5 px-5 w-full">
-            <span className="text-white text-2xl font-bold">rendiero.</span>
+            <button onClick={goToIndex} className="text-white text-2xl font-bold">rendiero.</button>
 
             <img src={MenuIcon} alt="menu toogle" className="w-8 cursor-pointer" onClick={() => setIsOpen(!isOpen)}/>
         
