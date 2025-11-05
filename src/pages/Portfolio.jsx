@@ -2,8 +2,10 @@ import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence, useMotionValue, useSpring, useTransform, useVelocity } from 'framer-motion';
 
 const Portfolio = () => {
+
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [portfolio, setPortfolio] = useState([]);
+
   const cursorX = useMotionValue(0);
   const cursorY = useMotionValue(0);
   const springConfig = { damping: 25, stiffness: 300 };
@@ -44,7 +46,7 @@ const Portfolio = () => {
                 href={project.link || '#'}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block text-5xl md:text-6xl lg:text-4xl font-bold py-4 relative z-10 flex gap-2 lg:gap-5"
+                className="block text-5xl md:text-6xl lg:text-4xl font-bold py-4 relative z-10 flex gap-2 lg:gap-5 hover:text-blue-500"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ 
                   opacity: 1, 
@@ -73,8 +75,11 @@ const Portfolio = () => {
                     }}
                     exit={{ opacity: 0, x: -20 }}
                   >
-                    <div className="bg-gray-800 bg-opacity-80 backdrop-blur-md p-6 rounded-lg">
-                      <p className="text-white text-lg mb-4">{project.description}</p>
+                    <div className="bg-gray-800 bg-opacity-80 backdrop-blur-md p-6 rounded-lg flex flex-col justify-center items-start gap-5">
+                      <span className="text-white text-sm italic font-light">{project.type}</span>
+
+                      <p className="text-white text-lg">{project.description}</p>
+
                       <div className="flex flex-wrap gap-4">
                         {project.techIcons.map((icon, i) => (
                           <img 

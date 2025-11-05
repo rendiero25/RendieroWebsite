@@ -15,8 +15,8 @@ const Header = () => {
     const goToIndex = () => {setIsOpen(false); navigate("/");}
     
     return (
-        <div className="absolute z-10 flex flex-row justify-between items-center pt-5 px-5 w-full">
-            <button onClick={goToIndex} className="text-white text-2xl font-bold">rendiero.</button>
+        <div className="absolute z-20 flex flex-row justify-between items-center pt-5 px-5 w-full">
+            <button onClick={goToIndex} className="cursor-pointer text-white text-2xl font-bold">rendiero.</button>
 
             <img src={MenuIcon} alt="menu toogle" className="w-8 cursor-pointer" onClick={() => setIsOpen(!isOpen)}/>
         
@@ -28,10 +28,10 @@ const Header = () => {
                     transition={{ duration: 1 }}
                 >
                     <div className="flex flex-col justify-center items-center w-full h-full gap-10">
-                        <IoIosCloseCircle onClick={() => setIsOpen(!isOpen)} className="size-[3rem] xl:size-[5rem] cursor-pointer text-white mb-10"/>
-                        <button onClick={goToIndex} className="cursor-pointer text-white font-secondary text-5xl font-medium">Home</button>
-                        <button onClick={goToAboutMe} className="cursor-pointer text-white font-secondary text-5xl font-medium">About Me</button>
-                        <button onClick={goToPortfolio} className="cursor-pointer text-white font-secondary text-5xl font-medium">Portfolio</button>
+                        <IoIosCloseCircle onClick={() => setIsOpen(!isOpen)} className="size-[3rem] xl:size-[5rem] cursor-pointer text-white mb-10 hover:text-blue-500"/>
+                        <button onClick={goToIndex} className="cursor-pointer text-white font-secondary text-5xl font-medium hover:text-blue-500">Home</button>
+                        <button onClick={goToAboutMe} className="cursor-pointer text-white font-secondary text-5xl font-medium hover:text-blue-500">About Me</button>
+                        <button onClick={goToPortfolio} className="cursor-pointer text-white font-secondary text-5xl font-medium hover:text-blue-500">Portfolio</button>
                     </div>
                 </motion.div>
             )}

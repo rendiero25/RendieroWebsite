@@ -40,6 +40,10 @@ const Index = () => {
         navigate("/about-me");
     }
 
+    const goToPortfolio = () => {
+        navigate("/portfolio");
+    }
+
     return (
         <div className="bg-background w-full h-full lg:min-h-screen">
             <div className="flex flex-col justify-between items-center">
@@ -89,6 +93,7 @@ const Index = () => {
                 <div className="h-full lg:h-[55vh] w-full flex flex-col lg:flex-row justify-between items-start gap-8 px-8 pb-8 pt-4">
                     {/* REC 4 */}
                     <motion.div
+                        onClick={() => goToPortfolio()}
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1 }}

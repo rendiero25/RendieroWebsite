@@ -1,35 +1,38 @@
 [
     {
         "id": 1,
+        "type": "Front End Web Development",
         "title": "Travelease",
         "description": "Travelease is a travel and activity booking platform that makes it easy for users to discover, plan and book the best experiences in a variety of destinations.",
-        "link": "", 
+        "link": "https://traveleasewebsite.vercel.app/", 
         "techIcons": [
-                        "/bg.jpg", 
-                        "../assets/AboutMe/tailwindcss.png", 
-                        "../assets/AboutMe/postman.png",
-                        "../assets/AboutMe/materialui.png", 
-                        "../assets/AboutMe/figma.png", 
-                        "../assets/AboutMe/postman.png",
-                        "../assets/AboutMe/github.png",
-                        "../assets/AboutMe/vercel.png",
-                        "../assets/AboutMe/windsurf.png"
+                        "/AboutMe/reactjs.png",
+                        "/AboutMe/tailwindcss.png", 
+                        "/AboutMe/materialui.png", 
+                        "/AboutMe/figma.png", 
+                        "/AboutMe/postman.png",
+                        "/AboutMe/github.png",
+                        "/AboutMe/vercel.png",
+                        "/AboutMe/windsurf.png" 
                     ]
     },
 
     {
         "id": 2,
+        "type": "Full Stack Web Development",
         "title": "College Info",
         "description": "CollegeInfo is a platform designed to simplify your college journey and guide you every step of the way, from finding the right university to achieving your academic goals.",
         "link": "", 
         "techIcons": [
-                        "../assets/AboutMe/reactjs.png", 
-                        "../assets/AboutMe/tailwindcss.png", 
-                        "../assets/AboutMe/firebase.png",
-                        "../assets/AboutMe/figma.png",
-                        "../assets/AboutMe/github.png",
-                        "../assets/AboutMe/vercel.png",
-                        "../assets/AboutMe/windsurf.png"
+                        "/AboutMe/reactjs.png", 
+                        "/AboutMe/nodejs.png",
+                        "/AboutMe/expressjs.png",
+                        "/AboutMe/tailwindcss.png", 
+                        "/AboutMe/firebase.png",
+                        "/AboutMe/figma.png",
+                        "/AboutMe/github.png",
+                        "/AboutMe/vercel.png",
+                        "/AboutMe/windsurf.png"
                     ]
     },
 
