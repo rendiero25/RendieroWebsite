@@ -45,8 +45,8 @@ const Portfolio = () => {
           mouseControls: true,
           touchControls: true,
           gyroControls: false,
-          minHeight: 200.00,
-          minWidth: 200.00,
+          minHeight: 200,
+          minWidth: 200,
           scale: 1.00,
           scaleMobile: 1.00,
           wingSpan: 15,
@@ -55,14 +55,18 @@ const Portfolio = () => {
         }));
     }
       return () => {
-        if (vantaEffect) setVantaEffect.destroy();
+        if (vantaEffect) {
+          vantaEffect.destroy();
+        }
       };
   },[vantaEffect]);
 
   return (
-    <div ref={vantaRef} className="bg-[url(../bg.jpg)] bg-no-repeat bg-cover bg-center min-h-screen text-white overflow-hidden flex justify-center items-ceter">
-      <div className="container mx-auto px-4 py-20 flex justify-center items-ceter">
-        <div className="space-y-4 flex flex-col justify-center items-start gap-3">
+    <div className="relative h-screen overflow-hidden">
+      <div ref={vantaRef} className="fixed inset-0 bg-[url(../bg.jpg)] bg-cover bg-center"></div>
+      <div className="relative h-full overflow-y-auto scrollbar-hide">
+        <div className="min-h-screen flex flex-col items-center pt-30 pb-10">
+          <div className="max-w-4xl px-4 space-y-4 flex flex-col justify-center items-start">
           {portfolio.map((project, index) => (
             <div 
               key={project.id}
@@ -88,13 +92,13 @@ const Portfolio = () => {
                 }}
               >
                 <span className="text-gray-500 font-light">{String(index + 1).padStart(2, '0')}</span>
-                <span className="">{project.title}</span>
+                <span className="text-white hover:text-blue-500">{project.title}</span>
               </motion.a>
 
               <AnimatePresence>
                 {hoveredIndex === index && (
                   <motion.div
-                    className="absolute left-1/2 top-1/2 transform -translate-y-1/2 ml-80 w-96"
+                    className="fixed left-1/2 top-1/2 transform -translate-y-1/2 ml-80 w-96"
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ 
                       opacity: 1, 
@@ -124,6 +128,7 @@ const Portfolio = () => {
               </AnimatePresence>
             </div>
           ))}
+          </div>
         </div>
       </div>
     </div>

@@ -84,22 +84,22 @@ const AboutMe = () => {
                         <img src={Pic} alt="pic" className="w-50 lg:w-30 xl:w-45 3xl:w-50 h-full drop-shadow-2xl"/>
 
                         <div className="flex flex-row flex-wrap justify-center items-center gap-5 lg:gap-2 px-8">
-                            <button>
+                            <button className="cursor-pointer">
                                 <img src={GithubSvg} alt="GithubIcon" className="w-13 lg:w-5" onClick={goToGithub}/>
                             </button>
-                            <button>
+                            <button className="cursor-pointer">
                                 <img src={LinkedinSvg} alt="LinkedinIcon" className="w-13 lg:w-5" onClick={goToLinkedin}/>
                             </button>
-                            <button>
+                            <button className="cursor-pointer">
                                 <img src={InstagramSvg} alt="InstagramIcon" className="w-13 lg:w-5" onClick={goToInstagram}/>
                             </button>
-                            <button>
+                            <button className="cursor-pointer">
                                 <img src={MediumSvg} alt="MediumIcon" className="w-13 lg:w-5" onClick={goToMedium}/>
                             </button>
-                            <button>
+                            <button className="cursor-pointer">
                                 <img src={MailSvg} alt="MailSvg" className="w-13 lg:w-5" onClick={goToMail}/>
                             </button>
-                            <button>
+                            <button className="cursor-pointer">
                                 <img src={WhatsappSvg} alt="WhatsappSvg" className="w-13 lg:w-5" onClick={goToWhatsapp}/>
                             </button>
                         </div>
@@ -113,12 +113,12 @@ const AboutMe = () => {
                         transition={{ duration: 0.5, delay: 0.2 }}
                     >
                         <p className="text-white text-2xl lg:text-lg 2xl:text-xl lg:max-w-xl font-normal text-center lg:text-left leading-normal">With an educational background in technology, I'm an 
-                            experienced Front-End Web Developer skilled in HTML, 
-                            CSS, TailwindCSS, JavaScript, Typescript, React JS, GSAP 
-                            and Three JS. Proficient in API integration and UI/UX 
+                            experienced Front-End Web and Mobile Developer skilled in React JS
+                            , React Native, TailwindCSS, JavaScript, Typescript, GSAP, Motion, 
+                            Three JS and etc. Proficient in API integration and UI/UX 
                             design to create modern and responsive interfaces. <br /><br />
 
-                            Successfully completed over 13 projects with a 95% client 
+                            Successfully completed over 15 projects with a 95% client 
                             satisfaction rate. I focus is on building functional web 
                             applications that enhance user experiences and deliver real 
                             value to businesses.
