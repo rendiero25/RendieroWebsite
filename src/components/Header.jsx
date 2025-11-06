@@ -15,7 +15,7 @@ const Header = () => {
     const goToIndex = () => {setIsOpen(false); navigate("/");}
     
     return (
-        <div className="absolute z-20 flex flex-row justify-between items-center pt-5 px-5 w-full">
+        <div className="absolute lg:sticky top-0 z-20 flex flex-row justify-between items-center pt-5 px-5 w-full">
             <button onClick={goToIndex} className="cursor-pointer text-white text-2xl font-bold">rendiero.</button>
 
             <img src={MenuIcon} alt="menu toogle" className="w-8 cursor-pointer" onClick={() => setIsOpen(!isOpen)}/>

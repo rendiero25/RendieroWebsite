@@ -1,5 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence, useMotionValue, useSpring, useTransform, useVelocity } from 'framer-motion';
+import * as THREE from "three";
+import BIRDS from "vanta/dist/vanta.birds.min";
 
 const Portfolio = () => {
 
@@ -31,8 +33,34 @@ const Portfolio = () => {
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
+  const [vantaEffect, setVantaEffect] = useState(null);
+  const vantaRef = useRef(null);
+
+  useEffect(() => {
+    if (!vantaEffect) {
+      setVantaEffect(
+        BIRDS({
+          el: vantaRef.current,
+          THREE: THREE,
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          wingSpan: 15,
+          backgorundColor: 0x20224,
+          backgroundAlpha: 0
+        }));
+    }
+      return () => {
+        if (vantaEffect) setVantaEffect.destroy();
+      };
+  },[vantaEffect]);
+
   return (
-    <div className="bg-[url(../bg.jpg)] bg-no-repeat bg-cover bg-center min-h-screen text-white overflow-hidden flex justify-center items-ceter">
+    <div ref={vantaRef} className="bg-[url(../bg.jpg)] bg-no-repeat bg-cover bg-center min-h-screen text-white overflow-hidden flex justify-center items-ceter">
       <div className="container mx-auto px-4 py-20 flex justify-center items-ceter">
         <div className="space-y-4 flex flex-col justify-center items-start gap-3">
           {portfolio.map((project, index) => (

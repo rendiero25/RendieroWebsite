@@ -8,9 +8,11 @@
         "techIcons": [
                         "/AboutMe/reactjs.png",
                         "/AboutMe/tailwindcss.png", 
-                        "/AboutMe/materialui.png", 
+                        "/AboutMe/materialui.png",
+                        "/AboutMe/vite.png", 
                         "/AboutMe/figma.png", 
                         "/AboutMe/postman.png",
+                        "/AboutMe/git.png",
                         "/AboutMe/github.png",
                         "/AboutMe/vercel.png",
                         "/AboutMe/windsurf.png" 
@@ -22,14 +24,17 @@
         "type": "Full Stack Web Development",
         "title": "College Info",
         "description": "CollegeInfo is a platform designed to simplify your college journey and guide you every step of the way, from finding the right university to achieving your academic goals.",
-        "link": "", 
+        "link": "https://college-info-lime.vercel.app/", 
         "techIcons": [
                         "/AboutMe/reactjs.png", 
                         "/AboutMe/nodejs.png",
                         "/AboutMe/expressjs.png",
+                        "/AboutMe/vite.png",
                         "/AboutMe/tailwindcss.png", 
                         "/AboutMe/firebase.png",
+                        "/AboutMe/motion.png",
                         "/AboutMe/figma.png",
+                        "/AboutMe/git.png",
                         "/AboutMe/github.png",
                         "/AboutMe/vercel.png",
                         "/AboutMe/windsurf.png"
@@ -38,51 +43,155 @@
 
     {
         "id": 3,
-        "title": "Travelease",
-        "description": "Travelease is a travel and activity booking platform that makes it easy for users to discover, plan and book the best experiences in a variety of destinations.",
-        "link": "", 
+        "type":"Front End Web Development",
+        "title": "Deta Power",
+        "description": "Deta Power is committed to the research, manufacture and maintenance of generator sets and power systems, providing comprehensive, professional, large-scale and systematic power system solutions",
+        "link": "https://detapower.co.id/", 
         "techIcons": [
-                        "../assets/AboutMe/reactjs.png", 
-                        "../assets/AboutMe/tailwindcss.png", 
-                        "../assets/AboutMe/postman.png",
-                        "../assets/AboutMe/materialui.png", 
-                        "../assets/AboutMe/figma.png", 
-                        "../assets/AboutMe/postman.png",
-                        "../assets/AboutMe/github.png",
-                        "../assets/AboutMe/vercel.png",
-                        "../assets/AboutMe/windsurf.png"
+                        "/AboutMe/reactjs.png", 
+                        "/AboutMe/tailwindcss.png",
+                        "/AboutMe/vite.png",
+                        "/AboutMe/git.png",
+                        "/AboutMe/github.png",
+                        "/AboutMe/vercel.png",
+                        "/AboutMe/windsurf.png"
                     ]
     },
 
     {
         "id": 4,
-        "title": "College Info",
-        "description": "CollegeInfo is a platform designed to simplify your college journey and guide you every step of the way, from finding the right university to achieving your academic goals.",
-        "link": "", 
+        "type": "Front End Web Development",
+        "title": "Aisikai",
+        "description": "AISIKAI dedicated to the high quality research, development, manufacturing, and sales of electrical products. Over the years, the company has proactively expanded its business into four major market segments: New Energy, Power Quality, Industrial Control, and Power Distribution",
+        "link": "https://www.aisikai.co.id/", 
         "techIcons": [
-                        "../assets/AboutMe/reactjs.png", 
-                        "../assets/AboutMe/tailwindcss.png", 
-                        "../assets/AboutMe/firebase.png",
-                        "../assets/AboutMe/figma.png",
-                        "../assets/AboutMe/github.png",
-                        "../assets/AboutMe/vercel.png",
-                        "../assets/AboutMe/windsurf.png"
+                        "/AboutMe/reactjs.png", 
+                        "/AboutMe/tailwindcss.png",
+                        "/AboutMe/vite.png",
+                        "/AboutMe/git.png",
+                        "/AboutMe/github.png",
+                        "/AboutMe/vercel.png",
+                        "/AboutMe/windsurf.png"
                     ]
     },
 
     {
         "id": 5,
+        "type": "Full Stack Web Development",
+        "title": "Elang Rajawali Group",
+        "description": "Elang Rajawali Group is a holding company that bridges defense and security needs with appropriate solutions. With various subsidiaries focused on various aspects of the defense, security, and technology industries,",
+        "link": "https://www.elangrajawaligroup.co.id/", 
+        "techIcons": [
+                        "/AboutMe/reactjs.png", 
+                        "/AboutMe/tailwindcss.png", 
+                        "/AboutMe/mongodb.png",
+                        "/AboutMe/vite.png",
+                        "/AboutMe/nodejs.png",
+                        "/AboutMe/expressjs.png", 
+                        "/AboutMe/motion.png", 
+                        "/AboutMe/figma.png",
+                        "/AboutMe/git.png",
+                        "/AboutMe/github.png",
+                        "/AboutMe/vercel.png",
+                        "/AboutMe/windsurf.png"
+                    ]
+    },
+
+    {
+        "id": 6,
+        "type": "Front End Web Development",
+        "title": "Travelease",
+        "description": "Travelease is a travel and activity booking platform that makes it easy for users to discover, plan and book the best experiences in a variety of destinations.",
+        "link": "https://traveleasewebsite.vercel.app/", 
+        "techIcons": [
+                        "/AboutMe/reactjs.png",
+                        "/AboutMe/tailwindcss.png", 
+                        "/AboutMe/materialui.png",
+                        "/AboutMe/vite.png", 
+                        "/AboutMe/figma.png", 
+                        "/AboutMe/postman.png",
+                        "/AboutMe/git.png",
+                        "/AboutMe/github.png",
+                        "/AboutMe/vercel.png",
+                        "/AboutMe/windsurf.png" 
+                    ]
+    },
+
+    {
+        "id": 7,
+        "type": "Full Stack Web Development",
         "title": "College Info",
         "description": "CollegeInfo is a platform designed to simplify your college journey and guide you every step of the way, from finding the right university to achieving your academic goals.",
-        "link": "", 
+        "link": "https://college-info-lime.vercel.app/", 
         "techIcons": [
-                        "../assets/AboutMe/reactjs.png", 
-                        "../assets/AboutMe/tailwindcss.png", 
-                        "../assets/AboutMe/firebase.png",
-                        "../assets/AboutMe/figma.png",
-                        "../assets/AboutMe/github.png",
-                        "../assets/AboutMe/vercel.png",
-                        "../assets/AboutMe/windsurf.png"
+                        "/AboutMe/reactjs.png", 
+                        "/AboutMe/nodejs.png",
+                        "/AboutMe/expressjs.png",
+                        "/AboutMe/vite.png",
+                        "/AboutMe/tailwindcss.png", 
+                        "/AboutMe/firebase.png",
+                        "/AboutMe/motion.png",
+                        "/AboutMe/figma.png",
+                        "/AboutMe/git.png",
+                        "/AboutMe/github.png",
+                        "/AboutMe/vercel.png",
+                        "/AboutMe/windsurf.png"
+                    ]
+    },
+
+    {
+        "id": 8,
+        "type":"Front End Web Development",
+        "title": "Deta Power",
+        "description": "Deta Power is committed to the research, manufacture and maintenance of generator sets and power systems, providing comprehensive, professional, large-scale and systematic power system solutions",
+        "link": "https://detapower.co.id/", 
+        "techIcons": [
+                        "/AboutMe/reactjs.png", 
+                        "/AboutMe/tailwindcss.png",
+                        "/AboutMe/vite.png",
+                        "/AboutMe/git.png",
+                        "/AboutMe/github.png",
+                        "/AboutMe/vercel.png",
+                        "/AboutMe/windsurf.png"
+                    ]
+    },
+
+    {
+        "id": 9,
+        "type": "Front End Web Development",
+        "title": "Aisikai",
+        "description": "AISIKAI dedicated to the high quality research, development, manufacturing, and sales of electrical products. Over the years, the company has proactively expanded its business into four major market segments: New Energy, Power Quality, Industrial Control, and Power Distribution",
+        "link": "https://www.aisikai.co.id/", 
+        "techIcons": [
+                        "/AboutMe/reactjs.png", 
+                        "/AboutMe/tailwindcss.png",
+                        "/AboutMe/vite.png",
+                        "/AboutMe/git.png",
+                        "/AboutMe/github.png",
+                        "/AboutMe/vercel.png",
+                        "/AboutMe/windsurf.png"
+                    ]
+    },
+
+    {
+        "id": 10,
+        "type": "Full Stack Web Development",
+        "title": "Elang Rajawali Group",
+        "description": "Elang Rajawali Group is a holding company that bridges defense and security needs with appropriate solutions. With various subsidiaries focused on various aspects of the defense, security, and technology industries,",
+        "link": "https://www.elangrajawaligroup.co.id/", 
+        "techIcons": [
+                        "/AboutMe/reactjs.png", 
+                        "/AboutMe/tailwindcss.png", 
+                        "/AboutMe/mongodb.png",
+                        "/AboutMe/vite.png",
+                        "/AboutMe/nodejs.png",
+                        "/AboutMe/expressjs.png", 
+                        "/AboutMe/motion.png", 
+                        "/AboutMe/figma.png",
+                        "/AboutMe/git.png",
+                        "/AboutMe/github.png",
+                        "/AboutMe/vercel.png",
+                        "/AboutMe/windsurf.png"
                     ]
     }
 ]

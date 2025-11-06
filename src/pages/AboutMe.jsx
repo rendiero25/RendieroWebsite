@@ -28,6 +28,7 @@ import Postman from "../assets/AboutMe/postman.png";
 import Vercel from "../assets/AboutMe/vercel.png";
 import Windsurf from "../assets/AboutMe/windsurf.png";
 import Wordpress from "../assets/AboutMe/wordpress.png";
+import Motion from "../assets/AboutMe/motion.png";
 
 import DownloadIcon from "../assets/AboutMe/download.png";
 
@@ -141,7 +142,8 @@ const AboutMe = () => {
                             <img src={Typescript} alt="Typescript" className="w-15 lg:w-8 2xl:w-10"/> 
                             <img src={Materialui} alt="Materialui" className="w-15 lg:w-8 2xl:w-10"/> 
                             <img src={Nextjs} alt="Nextjs" className="w-15 lg:w-8 2xl:w-10"/>   
-                            <img src={Gsap} alt="Gsap" className="w-15 lg:w-8 2xl:w-10"/>            
+                            <img src={Gsap} alt="Gsap" className="w-15 lg:w-8 2xl:w-10"/>
+                            <img src={Motion} alt="Motion" className="w-15 lg:w-8 2xl:w-10"/>            
                             <img src={Wordpress} alt="Wordpress" className="w-15 lg:w-8 2xl:w-10"/>
                             <img src={Threejs} alt="Threejs" className="w-15 lg:w-8 2xl:w-10"/>  
                             <img src={Git} alt="Git" className="w-15 lg:w-8 2xl:w-10"/>      
