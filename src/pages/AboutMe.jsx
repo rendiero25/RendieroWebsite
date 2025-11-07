@@ -1,6 +1,7 @@
 import { useHeaderContext } from "../context/HeaderContext";
 import { motion } from "motion/react";
 import { useNavigate } from "react-router-dom";
+import { useRef, useEffect, useState } from "react";
 
 import Pic from "../assets/AboutMe/pic.png";
 import Affinity from "../assets/AboutMe/affinitydesigner.png";
@@ -39,6 +40,9 @@ import MediumSvg from "../assets/AboutMe/medium.svg";
 import MailSvg from "../assets/AboutMe/mail.svg";
 import WhatsappSvg from "../assets/AboutMe/whatsapp.svg";
 
+import * as THREE from "three";
+import HALO from "vanta/dist/vanta.halo.min";
+
 const AboutMe = () => {
 
     const { isOpen } = useHeaderContext();
@@ -72,9 +76,42 @@ const AboutMe = () => {
         window.open("mailto:workspace.rendy@gmail.com", "_blank", "noopener,noreferrer");
     }
 
+    const [haloEffect, setHaloEffect] = useState(null);
+    const haloRef = useRef(null);
+
+    useEffect(() => {
+        if (!haloEffect && haloRef.current) {
+            try {
+                const effect = HALO({
+                    el: haloRef.current,
+                    THREE: THREE, // Explicitly pass THREE
+                    mouseControls: true,
+                    touchControls: true,
+                    gyroControls: false,
+                    minHeight: 200.00,
+                    minWidth: 200.00,
+                    backgroundColor: 0x282C38,
+                    backgroundAlpha: 0,
+                    xOffset: -0.17
+                });
+                setHaloEffect(effect);
+            } catch (error) {
+                console.error("Error initializing Vanta effect:", error);
+            }
+        }
+        
+        // Cleanup function
+        return () => {
+            if (haloEffect) {
+                haloEffect.destroy();
+                setHaloEffect(null);
+            }
+        };
+    }, [haloEffect]);
+
     return (
-        <div className="bg-[url(../bg.jpg)] bg-no-repeat bg-cover bg-center w-full lg:h-screen">         
-            <div className="h-full flex flex-col lg:flex-row justify-center items-center gap-15 pb-15 lg:pb-0">
+        <div ref={haloRef} className="bg-[url(../bg.jpg)] bg-no-repeat bg-cover bg-center w-full lg:h-screen">         
+            <div className="h-full flex flex-col lg:flex-row justify-center items-center gap-25 pb-15 lg:pb-0">
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -85,22 +122,22 @@ const AboutMe = () => {
 
                         <div className="flex flex-row flex-wrap justify-center items-center gap-5 lg:gap-2 px-8">
                             <button className="cursor-pointer">
-                                <img src={GithubSvg} alt="GithubIcon" className="w-13 lg:w-5" onClick={goToGithub}/>
+                                <img src={GithubSvg} alt="GithubIcon" className="w-13 lg:w-10" onClick={goToGithub}/>
                             </button>
                             <button className="cursor-pointer">
-                                <img src={LinkedinSvg} alt="LinkedinIcon" className="w-13 lg:w-5" onClick={goToLinkedin}/>
+                                <img src={LinkedinSvg} alt="LinkedinIcon" className="w-13 lg:w-10" onClick={goToLinkedin}/>
                             </button>
                             <button className="cursor-pointer">
-                                <img src={InstagramSvg} alt="InstagramIcon" className="w-13 lg:w-5" onClick={goToInstagram}/>
+                                <img src={InstagramSvg} alt="InstagramIcon" className="w-13 lg:w-10" onClick={goToInstagram}/>
                             </button>
                             <button className="cursor-pointer">
-                                <img src={MediumSvg} alt="MediumIcon" className="w-13 lg:w-5" onClick={goToMedium}/>
+                                <img src={MediumSvg} alt="MediumIcon" className="w-13 lg:w-10" onClick={goToMedium}/>
                             </button>
                             <button className="cursor-pointer">
-                                <img src={MailSvg} alt="MailSvg" className="w-13 lg:w-5" onClick={goToMail}/>
+                                <img src={MailSvg} alt="MailSvg" className="w-13 lg:w-10" onClick={goToMail}/>
                             </button>
                             <button className="cursor-pointer">
-                                <img src={WhatsappSvg} alt="WhatsappSvg" className="w-13 lg:w-5" onClick={goToWhatsapp}/>
+                                <img src={WhatsappSvg} alt="WhatsappSvg" className="w-13 lg:w-10" onClick={goToWhatsapp}/>
                             </button>
                         </div>
                     </div>
@@ -112,11 +149,16 @@ const AboutMe = () => {
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.5, delay: 0.2 }}
                     >
-                        <p className="text-white text-2xl lg:text-lg 2xl:text-xl lg:max-w-xl font-normal text-center lg:text-left leading-normal">With an educational background in technology, I'm an 
-                            experienced Front-End Web and Mobile Developer skilled in React JS
-                            , React Native, TailwindCSS, JavaScript, Typescript, GSAP, Motion, 
-                            Three JS and etc. Proficient in API integration and UI/UX 
-                            design to create modern and responsive interfaces. <br /><br />
+                        <p className="text-white text-2xl lg:text-lg 2xl:text-xl lg:max-w-xl font-normal text-center lg:text-left leading-normal">
+                            With a background in technology, I’m a passionate and 
+                            experienced Front-End Web Developer specializing in React JS, 
+                            TailwindCSS, JavaScript, TypeScript, GSAP, Motion, and Three JS. 
+                            I focus on crafting modern, responsive, and user-friendly 
+                            interfaces through clean code, thoughtful design, and seamless 
+                            API integration. Beyond development, I’m also an Offensive Security 
+                            Enthusiast with a strong interest in web security and bug bounty, 
+                            exploring vulnerabilities to help build safer and more resilient 
+                            applications. <br /><br />
 
                             Successfully completed over 15 projects with a 95% client 
                             satisfaction rate. I focus is on building functional web 

@@ -85,7 +85,7 @@ const Index = () => {
                         style={{backgroundImage: `url(${Rec3})`, backgroundSize: "cover", backgroundPosition: "center"}}
                     >
                         <h2 className="text-white font-medium uppercase"><span className="text-[#1772FE]">Hi! I'm</span> Rendy Norman Tomaluweng</h2>
-                        <h2 className="text-white font-medium uppercase"><span className="text-[#1772FE]">A</span> Front End Web Developer <span className="text-[#1772FE]">and</span> Mobile Developer</h2>
+                        <h2 className="text-white font-medium uppercase"><span className="text-[#1772FE]">A</span> Front End Web Developer <span className="text-[#1772FE]">and</span> Offensive Security Enthusiast</h2>
                         <h2 className="text-white font-medium uppercase"><span className="text-[#1772FE]">Based In</span> Indonesia</h2>                      
                     </motion.div>                    
                 </div>
@@ -120,8 +120,8 @@ const Index = () => {
                                 className="w-full h-full p-10 py-10 lg:py-5 2xl:py-10 sm:pl-20 md:pl-30 lg:pl-5 xl:pl-10 3xl:pl-15 rounded-3xl flex flex-col justify-center items-center gap-4"
                                 style={{backgroundImage: `url(${Rec5})`, backgroundSize: "cover", backgroundPosition: "center"}}
                                 >
-                                    <h2 className="font-secondary text-black text-left text-5xl lg:text-2xl 2xl:text-4xl 3xl:text-5xl font-medium leading-tight uppercase self-start">CODING, COFFEE, AND GAMING</h2>              
-                                    <p className="text-black text-3xl lg:text-sm 2xl:text-xl font-normal text-left leading-normal lg:leading-tight">A place where I share my thoughts, tips, and a little bit of dev-life rant</p>
+                                    <h2 className="font-secondary text-black text-left text-5xl lg:text-2xl 2xl:text-4xl 3xl:text-5xl font-medium leading-tight uppercase self-start">CODING, COFFEE, AND BUG BOUNTY</h2>              
+                                    <p className="text-black text-3xl lg:text-sm 2xl:text-xl font-normal text-left leading-normal lg:leading-tight">A place where I share my thoughts, tips, and a little bit of dev-life and bug bounty rant</p>
                                 </motion.div> 
                             </button>
                               
@@ -159,12 +159,13 @@ const Index = () => {
                     >        
                         <h2 className="font-secondary text-white text-7xl lg:text-4xl 2xl:text-5xl 3xl:text-6xl font-medium leading-tight uppercase self-start">About Me</h2>              
                         
-                        <p className="text-white text-2xl sm:text-3xl lg:text-xs 2xl:text-xl 3xl:text-xl font-normal text-left leading-normal">With an educational background in technology, 
-                            I'm an experienced Front-End Web and Mobile Developer 
-                            skilled in React JS, React Native, TailwindCSS, JavaScript, 
-                            Typescript, GSAP, Motion, Three JS, etc. 
-                            Proficient in API integration and UI/UX design 
-                            to create modern and responsive interfaces.</p>
+                        <p className="text-white text-2xl sm:text-3xl lg:text-xs 2xl:text-xl 3xl:text-xl font-normal text-left leading-normal">
+                            With an educational background in technology, I'm an experienced Front-End Web 
+                            skilled in React JS, TailwindCSS, JavaScript, TypeScript, GSAP, Motion, and 
+                            Three JS. Proficient in API integration and UI/UX design to create modern and 
+                            responsive interfaces. Also an Offensive Security Enthusiast, passionate about 
+                            web security and exploring vulnerabilities to build safer, more resilient 
+                            applications.</p>
 
                         <button 
                             onClick={() => goToAboutMe()} 

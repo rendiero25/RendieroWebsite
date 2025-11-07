@@ -6,6 +6,7 @@ import Index from "./pages/Index";
 import AboutMe from "./pages/AboutMe";
 import Header from "./components/Header"; 
 import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
 
 const AppContent = () => {
   const location = useLocation();
@@ -19,6 +20,7 @@ const AppContent = () => {
         <Route path="/" element={<Index />} />
         <Route path="/about-me" element={<AboutMe />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
   );
