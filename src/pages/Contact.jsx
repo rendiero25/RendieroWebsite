@@ -22,16 +22,16 @@ const Contact = () => {
                     transition={{ duration: 0.5 }}
                     className="flex flex-col justify-center items-start gap-8"
                 >
-                    <p className="text-white text-2xl lg:text-lg 2xl:text-xl lg:max-w-xl font-normal text-center lg:text-left leading-normal">With an educational background in technology, I'm an 
+                    <p className="text-white text-2xl lg:text-lg 2xl:text-3xl lg:max-w-xl font-normal text-center leading-normal">With an educational background in technology, I'm an 
                         Whether you’re looking for a web developer to bring your idea to 
                         life or want to collaborate on a creative project, I’d love to 
                         hear from you. Send me a message and let’s make something amazing 
                         happen together.
                     </p>
 
-                    <div className="flex flex-row justify-between items-center gap-8">
-                        <img src={MailSvg} alt="MailIcon" className="cursor-pointer w-13 lg:w-15" onClick={goToMail}/>
-                        <img src={WhatsappSvg} alt="WhatsappIcon" className="cursor-pointer w-13 lg:w-15" onClick={goToWhatsapp}/>
+                    <div className="flex flex-row justify-center items-center gap-8 w-full">
+                        <img src={MailSvg} alt="MailIcon" className="cursor-pointer w-13 lg:w-15 hover:scale-110 hover:shadow-2xl" onClick={goToMail}/>
+                        <img src={WhatsappSvg} alt="WhatsappIcon" className="cursor-pointer w-13 lg:w-15 hover:scale-110 hover:shadow-2xl" onClick={goToWhatsapp}/>
                     </div>
                 </motion.div>
                 

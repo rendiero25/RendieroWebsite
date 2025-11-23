@@ -121,22 +121,22 @@ const AboutMe = () => {
                         <img src={Pic} alt="pic" className="w-50 lg:w-30 xl:w-45 3xl:w-50 h-full drop-shadow-2xl"/>
 
                         <div className="flex flex-row flex-wrap justify-center items-center gap-5 lg:gap-2 px-8">
-                            <button className="cursor-pointer">
+                            <button className="cursor-pointer hover:scale-110 hover:shadow-2xl">
                                 <img src={GithubSvg} alt="GithubIcon" className="w-13 lg:w-10" onClick={goToGithub}/>
                             </button>
-                            <button className="cursor-pointer">
+                            <button className="cursor-pointer hover:scale-110 hover:shadow-2xl">
                                 <img src={LinkedinSvg} alt="LinkedinIcon" className="w-13 lg:w-10" onClick={goToLinkedin}/>
                             </button>
-                            <button className="cursor-pointer">
+                            <button className="cursor-pointer hover:scale-110 hover:shadow-2xl">
                                 <img src={InstagramSvg} alt="InstagramIcon" className="w-13 lg:w-10" onClick={goToInstagram}/>
                             </button>
-                            <button className="cursor-pointer">
+                            <button className="cursor-pointer hover:scale-110 hover:shadow-2xl">
                                 <img src={MediumSvg} alt="MediumIcon" className="w-13 lg:w-10" onClick={goToMedium}/>
                             </button>
-                            <button className="cursor-pointer">
+                            <button className="cursor-pointer hover:scale-110 hover:shadow-2xl">
                                 <img src={MailSvg} alt="MailSvg" className="w-13 lg:w-10" onClick={goToMail}/>
                             </button>
-                            <button className="cursor-pointer">
+                            <button className="cursor-pointer hover:scale-110 hover:shadow-2xl">
                                 <img src={WhatsappSvg} alt="WhatsappSvg" className="w-13 lg:w-10" onClick={goToWhatsapp}/>
                             </button>
                         </div>

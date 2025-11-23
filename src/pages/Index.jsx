@@ -81,7 +81,7 @@ const Index = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 2 }}
-                        className="w-full lg:w-[20%] h-auto lg:h-full px-10 lg:px-5 2xl:px-10 py-8 sm:py-20 md:py-35 lg:py-8 3xl:py-10 rounded-3xl font-secondary text-3xl sm:text-6xl lg:text-xl 2xl:text-3xl leading-tight flex flex-col justify-center items-start gap-6 md:gap-12 lg:gap-6 hover:scale-105 hover:shadow-2xl"
+                        className="w-full lg:w-[20%] h-auto lg:h-full px-10 lg:px-5 2xl:px-10 py-8 sm:py-20 md:py-35 lg:py-8 3xl:py-10 rounded-3xl font-secondary text-3xl sm:text-6xl lg:text-xl 2xl:text-3xl 3xl:text-2xl leading-tight flex flex-col justify-center items-start gap-6 md:gap-12 lg:gap-6 hover:scale-105 hover:shadow-2xl"
                         style={{backgroundImage: `url(${Rec3})`, backgroundSize: "cover", backgroundPosition: "center"}}
                     >
                         <h2 className="text-white font-medium uppercase"><span className="text-[#1772FE]">Hi! I'm</span> Rendy Norman Tomaluweng</h2>
@@ -100,7 +100,7 @@ const Index = () => {
                         className="w-full lg:w-[45%] h-[48rem] lg:h-full px-10 lg:px-6 2xl:px-10 py-8 rounded-3xl flex flex-col justify-between items-center gap-6"
                         style={{backgroundImage: `url(${Rec4})`, backgroundSize: "cover", backgroundPosition: "center"}}
                     >
-                        <h1 className="font-secondary text-white text-6xl lg:text-4xl 2xl:text-5xl 3xl:text-6xl font-medium leading-tight uppercase self-start">Portfolio</h1>        
+                        <h1 className="font-secondary text-white text-6xl lg:text-4xl 2xl:text-5xl 3xl:text-5xl font-medium leading-tight uppercase self-start">Portfolio</h1>        
                        
                         <div className="cursor-pointer flex flex-row justify-center items-center gap-4 lg:gap-2 2xl:gap-4 self-end group">
                             <span className="text-white text-2xl lg:text-lg 2xl:text-xl font-normal pl-8 text-right group-hover:scale-110 group-hover:shadow-2xl group-hover:pr-4">Don’t be shy, <br />there’s more to see!</span>
@@ -120,7 +120,7 @@ const Index = () => {
                                 className="w-full h-full p-10 py-10 lg:py-5 2xl:py-10 sm:pl-20 md:pl-30 lg:pl-5 xl:pl-10 3xl:pl-15 rounded-3xl flex flex-col justify-center items-center gap-4"
                                 style={{backgroundImage: `url(${Rec5})`, backgroundSize: "cover", backgroundPosition: "center"}}
                                 >
-                                    <h2 className="font-secondary text-black text-left text-5xl lg:text-2xl 2xl:text-4xl 3xl:text-5xl font-medium leading-tight uppercase self-start">CODING, COFFEE, AND BUG BOUNTY</h2>              
+                                    <h2 className="font-secondary text-black text-left text-5xl lg:text-2xl 2xl:text-4xl 3xl:text-4xl font-medium leading-tight uppercase self-start">CODING, COFFEE, AND BUG BOUNTY</h2>              
                                     <p className="text-black text-3xl lg:text-sm 2xl:text-xl font-normal text-left leading-normal lg:leading-tight">A place where I share my thoughts, tips, and a little bit of dev-life and bug bounty rant</p>
                                 </motion.div> 
                             </button>
@@ -157,7 +157,7 @@ const Index = () => {
                         className="w-full lg:w-[35%] h-full px-10 lg:px-10 3xl:px-20 pt-15 py-15 sm:py-30 lg:py-15 rounded-3xl flex flex-col gap-6"
                         style={{backgroundImage: `url(${Rec6})`, backgroundSize: "cover", backgroundPosition: "center"}}
                     >        
-                        <h2 className="font-secondary text-white text-7xl lg:text-4xl 2xl:text-5xl 3xl:text-6xl font-medium leading-tight uppercase self-start">About Me</h2>              
+                        <h2 className="font-secondary text-white text-7xl lg:text-4xl 2xl:text-5xl 3xl:text-5xl font-medium leading-tight uppercase self-start">About Me</h2>              
                         
                         <p className="text-white text-2xl sm:text-3xl lg:text-xs 2xl:text-xl 3xl:text-xl font-normal text-left leading-normal">
                             With an educational background in technology, I'm an experienced Front-End Web 
