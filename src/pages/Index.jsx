@@ -103,7 +103,7 @@ const Index = () => {
                         <h1 className="font-secondary text-white text-6xl lg:text-4xl 2xl:text-5xl 3xl:text-5xl font-medium leading-tight uppercase self-start">Portfolio</h1>
 
                         <div className="cursor-pointer flex flex-row justify-center items-center gap-4 lg:gap-2 2xl:gap-4 self-end group">
-                            <span className="text-white text-2xl lg:text-lg 2xl:text-xl font-normal pl-8 text-right group-hover:scale-110 group-hover:shadow-2xl group-hover:pr-4">Don’t be shy, <br />there’s more to see!</span>
+                            <span className="text-white text-2xl lg:text-lg 2xl:text-xl font-normal pl-4 lg:pl-8 text-right group-hover:scale-110 group-hover:shadow-2xl group-hover:pr-4">Don’t be shy, <br />there’s more to see!</span>
                             <img src={ArrowRight} alt="ArrowRight" className="w-15 lg:w-10 2xl:w-15 group-hover:scale-110 group-hover:shadow-2xl" />
                         </div>
                     </motion.div>

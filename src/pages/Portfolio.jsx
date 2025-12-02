@@ -103,7 +103,7 @@ const Portfolio = () => {
                 <AnimatePresence>
                   {hoveredIndex === index && (
                     <motion.div
-                      className="fixed left-1/2 top-1/2 transform -translate-y-1/2 ml-80 w-96"
+                      className="fixed left-1/2 top-1/2 transform -translate-y-1/2 ml-80 w-50"
                       initial={{ opacity: 0, x: -20 }}
                       animate={{ 
                         opacity: 1, 
@@ -115,7 +115,7 @@ const Portfolio = () => {
                       <div className="bg-gray-800 bg-opacity-80 backdrop-blur-md p-6 rounded-lg flex flex-col justify-center items-start gap-5">
                         <span className="text-white text-sm italic font-light">{project.type}</span>
 
-                        <p className="text-white text-lg">{project.description}</p>
+                        <p className="text-white text-sm">{project.description}</p>
 
                         <div className="flex flex-wrap gap-4">
                           {project.techIcons.map((icon, i) => (
@@ -123,7 +123,7 @@ const Portfolio = () => {
                               key={i} 
                               src={icon} 
                               alt="tech icon" 
-                              className="w-8 h-8 object-contain"
+                              className="w-5 h-5 object-contain"
                             />
                           ))}
                         </div>

@@ -15,7 +15,7 @@ const Contact = () => {
 
     return (
         <div className="bg-[url(../bg.jpg)] bg-no-repeat bg-cover bg-center w-full h-screen">
-            <div className="w-full h-full flex justify-center items-center">
+            <div className="w-full h-full flex justify-center items-center px-8">
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -30,8 +30,8 @@ const Contact = () => {
                     </p>
 
                     <div className="flex flex-row justify-center items-center gap-8 w-full">
-                        <img src={MailSvg} alt="MailIcon" className="cursor-pointer w-13 lg:w-15 hover:scale-110 hover:shadow-2xl" onClick={goToMail}/>
-                        <img src={WhatsappSvg} alt="WhatsappIcon" className="cursor-pointer w-13 lg:w-15 hover:scale-110 hover:shadow-2xl" onClick={goToWhatsapp}/>
+                        <img src={MailSvg} alt="MailIcon" className="cursor-pointer w-20 hover:scale-110 hover:shadow-2xl" onClick={goToMail}/>
+                        <img src={WhatsappSvg} alt="WhatsappIcon" className="cursor-pointer w-20 hover:scale-110 hover:shadow-2xl" onClick={goToWhatsapp}/>
                     </div>
                 </motion.div>
                 
