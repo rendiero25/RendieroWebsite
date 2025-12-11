@@ -48,8 +48,8 @@ const AboutMe = () => {
 
     const { isOpen } = useHeaderContext();
 
-    const cvPath = '/cvRendyNormanTomaluweng.pdf';
-    const cvName = 'cvRendyNormanTomaluweng.pdf';
+    const cvPath = '/cvRendyT.pdf';
+    const cvName = 'cvRendyT.pdf';
 
     const navigate = useNavigate();
 
