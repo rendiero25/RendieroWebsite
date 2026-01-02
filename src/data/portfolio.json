@@ -192,5 +192,43 @@
             "/AboutMe/vercel.png",
             "/AboutMe/windsurf.png"
         ]
+    },
+    {
+        "id": 12,
+        "type": "Front End Web Development",
+        "title": "Himmel HPL ",
+        "description": "HIMMEL is a leading provider of interior solutions. As one of Indonesia’s largest High Pressure Laminates (HPL) brand, our continuous investments in innovation and operation maintain the recognition of HIMMEL as a premium national brand",
+        "link": "https://himmel-hpl-website.vercel.app/",
+        "techIcons": [
+            "/AboutMe/reactjs.png",
+            "/AboutMe/tailwindcss.png",
+            "/AboutMe/vite.png",
+            "/AboutMe/motion.png",
+            "/AboutMe/figma.png",
+            "/AboutMe/git.png",
+            "/AboutMe/github.png",
+            "/AboutMe/vercel.png",
+            "/AboutMe/postman.png",
+            "/AboutMe/webstorm.png"
+        ]
+    },
+    {
+        "id": 13,
+        "type": "Front End Web Development",
+        "title": "Alamas Niaga Gemilang",
+        "description": "Founded in 2023, PT Alamas Niaga Gemilang which headquartered in North Jakarta, began as a specialized chemical solutions provider for the polyurethane foam manufacturing industry",
+        "link": "https://alamas-website.vercel.app/",
+        "techIcons": [
+            "/AboutMe/reactjs.png",
+            "/AboutMe/tailwindcss.png",
+            "/AboutMe/vite.png",
+            "/AboutMe/motion.png",
+            "/AboutMe/figma.png",
+            "/AboutMe/git.png",
+            "/AboutMe/github.png",
+            "/AboutMe/postman.png",
+            "/AboutMe/vercel.png",
+            "/AboutMe/webstorm.png"
+        ]
     }
 ]
