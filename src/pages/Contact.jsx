@@ -34,8 +34,6 @@ const Contact = () => {
                         <img src={WhatsappSvg} alt="WhatsappIcon" className="cursor-pointer w-20 hover:scale-110 hover:shadow-2xl" onClick={goToWhatsapp}/>
                     </div>
                 </motion.div>
-                
-                
             </div>
         </div>
     );

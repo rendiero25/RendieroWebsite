@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { motion } from "motion/react";
 import { useNavigate } from "react-router-dom";
 
@@ -15,6 +16,21 @@ import InstagramIcon from "../assets/Index/instagram.png";
 const Index = () => {
 
     const navigate = useNavigate();
+    const [hoverDiscuss, setHoverDiscuss] = useState(false);
+    const [hoverPortfolio, setHoverPortfolio] = useState(false);
+    const [hoverAbout, setHoverAbout] = useState(false);
+
+    const pulseAnimation = {
+        scale: [1, 1.05, 1],
+        y: [0, -4, 0],
+    };
+    const pulseTransition = {
+        duration: 0.6,
+        ease: "easeInOut",
+        repeat: Infinity,
+        repeatDelay: 2,
+    };
+    const staticState = { scale: 1, y: 0 };
 
     const goToWhatsapp = () => {
         window.open("https://wa.me/6281298790058?text=Halo,Saya%20tertarik%20dengan%20portfolio%20Anda,%20bisa%20berdiskusi%20lebih%20lanjut%20mengenai%20pembuatan%20website?", "_blank", "noopener,noreferrer");
@@ -53,17 +69,22 @@ const Index = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1 }}
-                        className="w-full lg:w-[50%] h-auto lg:h-full px-6 sm:px-10 lg:px-15 2xl:pl-20 2xl:pr-40 py-8 rounded-3xl flex flex-col justify-center items-center gap-6"
+                        className="w-full lg:w-[50%] hover:scale-105 hover:shadow-2xl h-auto lg:h-full px-6 sm:px-10 lg:px-15 2xl:pl-20 2xl:pr-40 py-8 rounded-3xl flex flex-col justify-center items-center gap-6"
                         style={{ backgroundImage: `url(${Rec1})`, backgroundSize: "cover", backgroundPosition: "center" }}
                     >
                         <h1 className="text-white text-3xl sm:text-5xl md:text-6xl lg:text-3xl 2xl:text-5xl 3xl:text-6xl font-medium leading-tight">Your vision, My code. Let’s built something that matters</h1>
 
-                        <button
+                        <motion.button
                             onClick={goToWhatsapp}
-                            className="cursor-pointer flex flex-row justify-between items-center bg-black rounded-full w-full p-2 hover:scale-110 hover:shadow-2xl">
+                            animate={hoverDiscuss ? staticState : pulseAnimation}
+                            transition={hoverDiscuss ? { duration: 0.2 } : pulseTransition}
+                            whileHover={{ scale: 1.1 }}
+                            onHoverStart={() => setHoverDiscuss(true)}
+                            onHoverEnd={() => setHoverDiscuss(false)}
+                            className="cursor-pointer flex flex-row justify-between items-center bg-black rounded-full w-full p-2 hover:shadow-2xl">
                             <span className="text-white text-2xl font-normal pl-8">Let's Discuss</span>
                             <img src={ArrowRight} alt="ArrowRight" className="w-15" />
-                        </button>
+                        </motion.button>
                     </motion.div>
 
                     {/* REC 2 */}
@@ -85,7 +106,7 @@ const Index = () => {
                         style={{ backgroundImage: `url(${Rec3})`, backgroundSize: "cover", backgroundPosition: "center" }}
                     >
                         <h2 className="text-white font-medium uppercase"><span className="text-[#1772FE]">Hi! I'm</span> Rendy Norman Tomaluweng</h2>
-                        <h2 className="text-white font-medium uppercase"><span className="text-[#1772FE]">A</span> Front End Web <span className="text-[#1772FE]">and</span> Mobile Developer</h2>
+                        <h2 className="text-[#1772FE] font-medium uppercase"><span className="text-white">A</span> Front End Web <span className="text-white">developer</span></h2>
                         <h2 className="text-white font-medium uppercase"><span className="text-[#1772FE]">Based In</span> Indonesia</h2>
                     </motion.div>
                 </div>
@@ -97,15 +118,23 @@ const Index = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1 }}
-                        className="w-full lg:w-[45%] h-[48rem] lg:h-full px-10 lg:px-6 2xl:px-10 py-8 rounded-3xl flex flex-col justify-between items-center gap-6"
+                        className="hover:scale-105 hover:shadow-2xl w-full lg:w-[45%] h-[48rem] lg:h-full px-10 lg:px-6 2xl:px-10 py-8 rounded-3xl flex flex-col justify-between items-center gap-6"
                         style={{ backgroundImage: `url(${Rec4})`, backgroundSize: "cover", backgroundPosition: "center" }}
                     >
                         <h1 className="font-secondary text-white text-6xl lg:text-4xl 2xl:text-5xl 3xl:text-5xl font-medium leading-tight uppercase self-start">Portfolio</h1>
 
-                        <div className="cursor-pointer flex flex-row justify-center items-center gap-4 lg:gap-2 2xl:gap-4 self-end group">
+                        <motion.div
+                            id="btnAnimation"
+                            animate={hoverPortfolio ? staticState : pulseAnimation}
+                            transition={hoverPortfolio ? { duration: 0.2 } : pulseTransition}
+                            whileHover={{ scale: 1.1 }}
+                            onHoverStart={() => setHoverPortfolio(true)}
+                            onHoverEnd={() => setHoverPortfolio(false)}
+                            className="cursor-pointer flex flex-row justify-center items-center gap-4 lg:gap-2 2xl:gap-4 self-end group"
+                        >
                             <span className="text-white text-2xl lg:text-lg 2xl:text-xl font-normal pl-4 lg:pl-8 text-right group-hover:scale-110 group-hover:shadow-2xl group-hover:pr-4">Don’t be shy, <br />there’s more to see!</span>
                             <img src={ArrowRight} alt="ArrowRight" className="w-15 lg:w-10 2xl:w-15 group-hover:scale-110 group-hover:shadow-2xl" />
-                        </div>
+                        </motion.div>
                     </motion.div>
 
                     {/* REC 5 & REC 6 */}
@@ -131,7 +160,7 @@ const Index = () => {
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 transition={{ duration: 1 }}
-                                className="bg-[#4D4D4D] w-full lg:h-[30%] px-10 lg:px-8 xl:px-12 2xl:px-14 3xl:px-22 py-10 sm:py-20 lg:py-5 xl:py-10 rounded-3xl flex flex-row justify-center items-center gap-8 sm:gap-15 lg:gap-4 xl:gap-5 xl:gap-6"
+                                className="bg-[#4D4D4D] hover:scale-105 hover:shadow-2xl w-full lg:h-[30%] px-10 lg:px-8 xl:px-12 2xl:px-14 3xl:px-22 py-10 sm:py-20 lg:py-5 xl:py-10 rounded-3xl flex flex-row justify-center items-center gap-8 sm:gap-15 lg:gap-4 xl:gap-5 xl:gap-6"
                             >
                                 <button onClick={() => goToLinkedin()} className="cursor-pointer hover:scale-120 hover:shadow-2xl">
                                     <img src={LinkedinIcon} alt="LinkedinIcon" className="w-20" />
@@ -154,7 +183,7 @@ const Index = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1 }}
-                        className="w-full lg:w-[35%] h-full px-10 lg:px-10 3xl:px-20 pt-15 py-15 sm:py-30 lg:py-15 rounded-3xl flex flex-col gap-6"
+                        className="hover:scale-105 hover:shadow-2xl w-full lg:w-[35%] h-full px-10 lg:px-10 3xl:px-20 pt-15 py-15 sm:py-30 lg:py-15 rounded-3xl flex flex-col gap-6"
                         style={{ backgroundImage: `url(${Rec6})`, backgroundSize: "cover", backgroundPosition: "center" }}
                     >
                         <h2 className="font-secondary text-white text-7xl lg:text-4xl 2xl:text-5xl 3xl:text-5xl font-medium leading-tight uppercase self-start">About Me</h2>
@@ -165,12 +194,19 @@ const Index = () => {
                             JavaScript, TypeScript, Mongodb,GSAP, Motion, and Three JS. Proficient in API
                             integration and UI/UX design to create modern and responsive interfaces. </p>
 
-                        <button
+                        <motion.button
                             onClick={() => goToAboutMe()}
-                            className="cursor-pointer flex flex-row justify-start items-center gap-4 lg:gap-2 2xl:gap-4 group">
+                            id="btnAnimation"
+                            animate={hoverAbout ? staticState : pulseAnimation}
+                            transition={hoverAbout ? { duration: 0.2 } : pulseTransition}
+                            whileHover={{ scale: 1.1 }}
+                            onHoverStart={() => setHoverAbout(true)}
+                            onHoverEnd={() => setHoverAbout(false)}
+                            className="cursor-pointer flex flex-row justify-start items-center gap-4 lg:gap-2 2xl:gap-4 group"
+                        >
                             <span className="text-white text-2xl lg:text-lg 2xl:text-xl font-normal text-right group-hover:scale-110 group-hover:shadow-2xl group-hover:pr-2">See more</span>
                             <img src={ArrowRight} alt="ArrowRight" className="w-15 lg:w-10 2xl:w-15 group-hover:scale-110 group-hover:shadow-2xl" />
-                        </button>
+                        </motion.button>
                     </motion.div>
                 </div>
             </div>

@@ -113,6 +113,9 @@ const Portfolio = () => {
                       exit={{ opacity: 0, x: -20 }}
                     >
                       <div className="bg-gray-800 bg-opacity-80 backdrop-blur-md p-6 rounded-lg flex flex-col justify-center items-start gap-5">
+                        {/* Optional: Add a project thumbnail */}
+                        {/* <img src={project.thumbnailUrl} alt={project.title} className="w-full rounded-md mb-4" /> */}
+
                         <span className="text-white text-sm italic font-light">{project.type}</span>
 
                         <p className="text-white text-sm">{project.description}</p>
@@ -126,6 +129,11 @@ const Portfolio = () => {
                               className="w-5 h-5 object-contain"
                             />
                           ))}
+                        </div>
+
+                        <div className="flex gap-4 mt-2">
+                          {project.liveUrl && <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline text-sm">Live Demo</a>}
+                          {project.repoUrl && <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline text-sm">Source Code</a>}
                         </div>
                       </div>
                     </motion.div>

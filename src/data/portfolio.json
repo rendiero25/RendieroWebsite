@@ -230,5 +230,44 @@
             "/AboutMe/vercel.png",
             "/AboutMe/webstorm.png"
         ]
+    },
+    {
+        "id": 14,
+        "type": "Full Stack Web Development",
+        "title": "Katiga",
+        "description": "Providing premium quality baby bedding and family towels since 2001. Certified by SNI, OEKO-TEX®, and K3L.",
+        "link": "https://katiga.id/",
+        "techIcons": [
+            "/AboutMe/reactjs.png",
+            "/AboutMe/nodejs.png",
+            "/AboutMe/expressjs.png",
+            "/AboutMe/tailwindcss.png",
+            "/AboutMe/vite.png",
+            "/AboutMe/mongodb.png",
+            "/AboutMe/motion.png",
+            "/AboutMe/figma.png",
+            "/AboutMe/git.png",
+            "/AboutMe/github.png",
+            "/AboutMe/vercel.png",
+            "/AboutMe/webstorm.png"
+        ]
+    },
+    {
+        "id": 15,
+        "type": "Front End Web Development",
+        "title": "Reno Express",
+        "description": "Reno Express specializes in anti-leak bathroom renewal in Singapore, offering permanent waterproofing solutions with a standardized process and guaranteed results.",
+        "link": "https://renoexpress.sg/",
+        "techIcons": [
+            "/AboutMe/reactjs.png",
+            "/AboutMe/tailwindcss.png",
+            "/AboutMe/vite.png",
+            "/AboutMe/motion.png",
+            "/AboutMe/figma.png",
+            "/AboutMe/git.png",
+            "/AboutMe/github.png",
+            "/AboutMe/vercel.png",
+            "/AboutMe/webstorm.png"
+        ]
     }
 ]
