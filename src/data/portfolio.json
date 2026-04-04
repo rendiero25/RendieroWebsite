@@ -269,5 +269,25 @@
             "/AboutMe/vercel.png",
             "/AboutMe/webstorm.png"
         ]
+    },
+    {
+        "id": 16,
+        "type": "Full Stack Web Development",
+        "title": "Sanxin Studio",
+        "description": "Sanxin Studio adalah agen kreatif berbasis di Bekasi yang berfokus pada produksi konten video, manajemen media sosial, dan strategi pemasaran digital.",
+        "link": "https://www.sanxinstudio.com",
+        "techIcons": [
+            "/AboutMe/reactjs.png",
+            "/AboutMe/nodejs.png",
+            "/AboutMe/expressjs.png",
+            "/AboutMe/tailwindcss.png",
+            "/AboutMe/vite.png",
+            "/AboutMe/mongodb.png",
+            "/AboutMe/figma.png",
+            "/AboutMe/git.png",
+            "/AboutMe/github.png",
+            "/AboutMe/vercel.png",
+            "/AboutMe/vscode.png"
+        ]
     }
 ]
