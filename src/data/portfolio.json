@@ -76,7 +76,7 @@
         "type": "Full Stack Web Development",
         "title": "Elang Rajawali Group",
         "description": "Elang Rajawali Group is a holding company that bridges defense and security needs with appropriate solutions. With various subsidiaries focused on various aspects of the defense, security, and technology industries,",
-        "link": "https://www.elangrajawaligroup.co.id/",
+        "link": "https://elangrajawaligroup.id/",
         "techIcons": [
             "/AboutMe/reactjs.png",
             "/AboutMe/tailwindcss.png",
@@ -183,6 +183,7 @@
         "link": "https://www.lensalokastudio.com/",
         "techIcons": [
             "/AboutMe/reactjs.png",
+            "/AboutMe/gsap.png",
             "/AboutMe/tailwindcss.png",
             "/AboutMe/vite.png",
             "/AboutMe/motion.png",
@@ -201,6 +202,8 @@
         "link": "https://himmel-hpl-website.vercel.app/",
         "techIcons": [
             "/AboutMe/reactjs.png",
+            "/AboutMe/gsap.png",
+            "/AboutMe/typescript.png",
             "/AboutMe/tailwindcss.png",
             "/AboutMe/vite.png",
             "/AboutMe/motion.png",
@@ -220,6 +223,8 @@
         "link": "https://alamas-website.vercel.app/",
         "techIcons": [
             "/AboutMe/reactjs.png",
+            "/AboutMe/gsap.png",
+            "/AboutMe/typescript.png",
             "/AboutMe/tailwindcss.png",
             "/AboutMe/vite.png",
             "/AboutMe/motion.png",
@@ -239,6 +244,8 @@
         "link": "https://katiga.id/",
         "techIcons": [
             "/AboutMe/reactjs.png",
+            "/AboutMe/gsap.png",
+            "/AboutMe/typescript.png",
             "/AboutMe/nodejs.png",
             "/AboutMe/expressjs.png",
             "/AboutMe/tailwindcss.png",
@@ -260,6 +267,8 @@
         "link": "https://renoexpress.sg/",
         "techIcons": [
             "/AboutMe/reactjs.png",
+            "/AboutMe/gsap.png",
+            "/AboutMe/typescript.png",
             "/AboutMe/tailwindcss.png",
             "/AboutMe/vite.png",
             "/AboutMe/motion.png",
@@ -278,6 +287,8 @@
         "link": "https://www.sanxinstudio.com",
         "techIcons": [
             "/AboutMe/reactjs.png",
+            "/AboutMe/gsap.png",
+            "/AboutMe/typescript.png",
             "/AboutMe/nodejs.png",
             "/AboutMe/expressjs.png",
             "/AboutMe/tailwindcss.png",
@@ -287,6 +298,29 @@
             "/AboutMe/git.png",
             "/AboutMe/github.png",
             "/AboutMe/vercel.png",
+            "/AboutMe/cloudinary.png",
+            "/AboutMe/vscode.png"
+        ]
+    },
+    {
+        "id": 17,
+        "type": "Full Stack Web Development",
+        "title": "Mewangi",
+        "description": "Komunitas Parfum Pertama di Indonesia. Mewangi hadir sebagai wadah bagi para enthusiast parfum di Indonesia untuk saling berbagi, berdiskusi, dan mengeksplorasi dunia wewangian yang tak terbatas.",
+        "link": "https://www.mewangi.id",
+        "techIcons": [
+            "/AboutMe/reactjs.png",
+            "/AboutMe/typescript.png",
+            "/AboutMe/gsap.png",
+            "/AboutMe/nodejs.png",
+            "/AboutMe/expressjs.png",
+            "/AboutMe/tailwindcss.png",
+            "/AboutMe/vite.png",
+            "/AboutMe/mongodb.png",
+            "/AboutMe/figma.png",
+            "/AboutMe/git.png",
+            "/AboutMe/github.png",
+            "/AboutMe/cloudinary.png",
             "/AboutMe/vscode.png"
         ]
     }
