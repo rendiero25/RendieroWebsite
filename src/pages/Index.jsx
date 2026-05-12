@@ -66,9 +66,9 @@ const Index = () => {
                 <div className="h-full lg:h-[45vh] w-full flex flex-col lg:flex-row justify-between items-start gap-8 px-8 pt-8 pb-4">
                     {/* REC 1 */}
                     <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 1 }}
+                        initial={{ opacity: 0, y: 40 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
                         className="w-full lg:w-[50%] hover:scale-105 hover:shadow-2xl h-auto lg:h-full px-6 sm:px-10 lg:px-15 2xl:pl-20 2xl:pr-40 py-8 rounded-3xl flex flex-col justify-center items-center gap-6"
                         style={{ backgroundImage: `url(${Rec1})`, backgroundSize: "cover", backgroundPosition: "center" }}
                     >
@@ -89,9 +89,9 @@ const Index = () => {
 
                     {/* REC 2 */}
                     <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 1.5 }}
+                        initial={{ opacity: 0, y: 40 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.7, delay: 0.25, ease: "easeOut" }}
                         className="bg-blue-200 w-full lg:w-[30%] h-full px-6 lg:px-20 py-35 sm:py-60 lg:py-8 rounded-3xl flex flex-col gap-6 hover:scale-105 hover:shadow-2xl"
                         style={{ backgroundImage: `url(${Pic})`, backgroundSize: "cover", backgroundPosition: "center" }}
                     >
@@ -99,9 +99,9 @@ const Index = () => {
 
                     {/* REC 3 */}
                     <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 2 }}
+                        initial={{ opacity: 0, y: 40 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.7, delay: 0.4, ease: "easeOut" }}
                         className="w-full lg:w-[20%] h-auto lg:h-full px-10 lg:px-5 2xl:px-10 py-8 sm:py-20 md:py-35 lg:py-8 3xl:py-10 rounded-3xl font-secondary text-3xl sm:text-6xl lg:text-xl 2xl:text-3xl 3xl:text-4xl leading-tight flex flex-col justify-center items-start gap-6 md:gap-12 lg:gap-6 hover:scale-105 hover:shadow-2xl"
                         style={{ backgroundImage: `url(${Rec3})`, backgroundSize: "cover", backgroundPosition: "center" }}
                     >
@@ -115,9 +115,9 @@ const Index = () => {
                     {/* REC 4 */}
                     <motion.div
                         onClick={() => goToPortfolio()}
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 1 }}
+                        initial={{ opacity: 0, y: 40 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.7, delay: 0.55, ease: "easeOut" }}
                         className="hover:scale-105 hover:shadow-2xl w-full lg:w-[45%] h-[48rem] lg:h-full px-10 lg:px-6 2xl:px-10 py-8 rounded-3xl flex flex-col justify-between items-center gap-6"
                         style={{ backgroundImage: `url(${Rec4})`, backgroundSize: "cover", backgroundPosition: "center" }}
                     >
@@ -143,9 +143,9 @@ const Index = () => {
                             {/* REC 5 */}
                             <button onClick={() => goToMedium()} className="cursor-pointer hover:scale-110 hover:shadow-2xl w-full h-full">
                                 <motion.div
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                    transition={{ duration: 1 }}
+                                    initial={{ opacity: 0, y: 40 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.7, delay: 0.7, ease: "easeOut" }}
                                     className="w-full h-full p-10 py-10 lg:py-5 2xl:py-10 sm:pl-20 md:pl-30 lg:pl-5 xl:pl-10 3xl:pl-15 rounded-3xl flex flex-col justify-center items-center gap-4"
                                     style={{ backgroundImage: `url(${Rec5})`, backgroundSize: "cover", backgroundPosition: "center" }}
                                 >
@@ -157,9 +157,9 @@ const Index = () => {
 
                             {/* REC 6 */}
                             <motion.div
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                transition={{ duration: 1 }}
+                                initial={{ opacity: 0, y: 40 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.7, delay: 0.85, ease: "easeOut" }}
                                 className="bg-[#4D4D4D] hover:scale-105 hover:shadow-2xl w-full lg:h-[30%] px-10 lg:px-8 xl:px-12 2xl:px-14 3xl:px-22 py-10 sm:py-20 lg:py-5 xl:py-10 rounded-3xl flex flex-row justify-center items-center gap-8 sm:gap-15 lg:gap-4 xl:gap-5 xl:gap-6"
                             >
                                 <button onClick={() => goToLinkedin()} className="cursor-pointer hover:scale-120 hover:shadow-2xl">
@@ -180,9 +180,9 @@ const Index = () => {
 
                     {/* REC 7 */}
                     <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 1 }}
+                        initial={{ opacity: 0, y: 40 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.7, delay: 1.0, ease: "easeOut" }}
                         className="hover:scale-105 hover:shadow-2xl w-full lg:w-[35%] h-full px-10 lg:px-10 3xl:px-20 pt-15 py-15 sm:py-30 lg:py-15 rounded-3xl flex flex-col gap-6"
                         style={{ backgroundImage: `url(${Rec6})`, backgroundSize: "cover", backgroundPosition: "center" }}
                     >

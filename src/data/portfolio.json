@@ -323,5 +323,27 @@
             "/AboutMe/cloudinary.png",
             "/AboutMe/vscode.png"
         ]
+    },
+    {
+        "id": 18,
+        "type": "Full Stack Web Development",
+        "title": "Navale Balancing",
+        "description": "Spesialis overhaul turbocharger, mesin 2-tak & 4-tak, pompa laut, kalibrasi governor, dan instalasi kelistrikan kapal. Lebih dari 8 tahun pengalaman melayani industri maritim Indonesia.",
+        "link": "https://www.navalebalancing.com/",
+        "techIcons": [
+            "/AboutMe/reactjs.png",
+            "/AboutMe/typescript.png",
+            "/AboutMe/gsap.png",
+            "/AboutMe/nodejs.png",
+            "/AboutMe/expressjs.png",
+            "/AboutMe/tailwindcss.png",
+            "/AboutMe/vite.png",
+            "/AboutMe/mongodb.png",
+            "/AboutMe/figma.png",
+            "/AboutMe/git.png",
+            "/AboutMe/github.png",
+            "/AboutMe/cloudinary.png",
+            "/AboutMe/vscode.png"
+        ]
     }
 ]
