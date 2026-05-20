@@ -345,5 +345,27 @@
             "/AboutMe/cloudinary.png",
             "/AboutMe/vscode.png"
         ]
+    },
+    {
+        "id": 19,
+        "type": "Full Stack Web Development",
+        "title": "GeekyTech",
+        "description": "",
+        "link": "https://www.geeky.id",
+        "techIcons": [
+            "/AboutMe/reactjs.png",
+            "/AboutMe/typescript.png",
+            "/AboutMe/gsap.png",
+            "/AboutMe/nodejs.png",
+            "/AboutMe/expressjs.png",
+            "/AboutMe/tailwindcss.png",
+            "/AboutMe/vite.png",
+            "/AboutMe/mongodb.png",
+            "/AboutMe/figma.png",
+            "/AboutMe/git.png",
+            "/AboutMe/github.png",
+            "/AboutMe/cloudinary.png",
+            "/AboutMe/vscode.png"
+        ]
     }
 ]
