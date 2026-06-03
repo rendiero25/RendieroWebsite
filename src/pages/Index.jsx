@@ -106,7 +106,7 @@ const Index = () => {
                         style={{ backgroundImage: `url(${Rec3})`, backgroundSize: "cover", backgroundPosition: "center" }}
                     >
                         <h2 className="text-white font-medium uppercase"><span className="text-[#1772FE]">Hi! I'm</span> Rendy Norman Tomaluweng</h2>
-                        <h2 className="text-[#1772FE] font-medium uppercase"><span className="text-white">A</span> Front End Web <span className="text-white">developer</span></h2>
+                        <h2 className="text-[#1772FE] font-medium uppercase"><span className="text-white">A</span> Front End Web & Mobile App <span className="text-white">developer</span></h2>
                         <h2 className="text-white font-medium uppercase"><span className="text-[#1772FE]">Based In</span> Indonesia</h2>
                     </motion.div>
                 </div>
