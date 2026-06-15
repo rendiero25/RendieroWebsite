@@ -2,6 +2,7 @@
     {
         "id": 1,
         "type": "Front End Web Development",
+        "category": "Platform",
         "title": "Travelease",
         "description": "Travelease is a travel and activity booking platform that makes it easy for users to discover, plan and book the best experiences in a variety of destinations.",
         "link": "https://traveleasewebsite.vercel.app/",
@@ -21,6 +22,7 @@
     {
         "id": 2,
         "type": "Full Stack Web Development",
+        "category": "Platform",
         "title": "College Info",
         "description": "CollegeInfo is a platform designed to simplify your college journey and guide you every step of the way, from finding the right university to achieving your academic goals.",
         "link": "https://college-info-lime.vercel.app/",
@@ -42,6 +44,7 @@
     {
         "id": 3,
         "type": "Front End Web Development",
+        "category": "Company Profile",
         "title": "Deta Power",
         "description": "Deta Power is committed to the research, manufacture and maintenance of generator sets and power systems, providing comprehensive, professional, large-scale and systematic power system solutions",
         "link": "https://detapower.co.id/",
@@ -58,6 +61,7 @@
     {
         "id": 4,
         "type": "Front End Web Development",
+        "category": "Company Profile",
         "title": "Aisikai",
         "description": "AISIKAI dedicated to the high quality research, development, manufacturing, and sales of electrical products. Over the years, the company has proactively expanded its business into four major market segments.",
         "link": "https://www.aisikai.co.id/",
@@ -74,6 +78,7 @@
     {
         "id": 5,
         "type": "Full Stack Web Development",
+        "category": "Company Profile",
         "title": "Elang Rajawali Group",
         "description": "Elang Rajawali Group is a holding company that bridges defense and security needs with appropriate solutions. With various subsidiaries focused on various aspects of the defense, security, and technology industries,",
         "link": "https://elangrajawaligroup.id/",
@@ -95,6 +100,7 @@
     {
         "id": 6,
         "type": "Front End Web Development",
+        "category": "Company Profile",
         "title": "Seasearch Asia",
         "description": "Simplifies global hiring with a data-driven approach — combining technology and recruiter expertise to deliver the right talent faster, smarter, and at scale.",
         "link": "https://seasearch.asia/",
@@ -111,6 +117,7 @@
     {
         "id": 7,
         "type": "Full Stack Web Development",
+        "category": "E-Commerce",
         "title": "Interskill",
         "description": "A modern e-commerce platform focused on online education in Indonesia.",
         "link": "https://college-info-lime.vercel.app/",
@@ -131,6 +138,7 @@
     {
         "id": 8,
         "type": "Full Stack Web Development",
+        "category": "E-Commerce",
         "title": "Isibangunan",
         "description": "Merupakan Situs Resmi PT. Lumbung Kemakmuran Bersama. Importir Resmi Yang Menyediakan lantai Vinyl, Marmer, Granit, ACP, wallpaper 3D , wallpanel Dan Lainnya",
         "link": "https://isibangunan.com/",
@@ -141,6 +149,7 @@
     {
         "id": 9,
         "type": "Full Stack Web Development",
+        "category": "Company Profile",
         "title": "PT. CRT Kabelita",
         "description": "Perusahaan wiring harness dan spart part audio video automotive terkemuka di wilayah Jabodetabek , Jawa Barat dan Jawa Tengah dengan kualitas pelayanan terbaik",
         "link": "https://crtkabelita.com/site",
@@ -160,6 +169,7 @@
     {
         "id": 10,
         "type": "Front End Web Development",
+        "category": "Company Profile",
         "title": "PT. Dua Sisi Sejahtera",
         "description": "Lebih dari 30+ perusahaan telah mempercayakan proses rekrutmen mereka kepada Dua Sisi. Dengan pendekatan yang cepat, akurat, dan human-centered.",
         "link": "https://www.duasisisejahtera.com/",
@@ -178,6 +188,7 @@
     {
         "id": 11,
         "type": "Front End Web Development",
+        "category": "Company Profile",
         "title": "Lensaloka Studio",
         "description": "Dari photobooth elegan hingga mobile photobooth, kami hadir dengan solusi yang sesuai untuk setiap jenis acara",
         "link": "https://www.lensalokastudio.com/",
@@ -197,8 +208,9 @@
     {
         "id": 12,
         "type": "Front End Web Development",
+        "category": "Company Profile",
         "title": "Himmel HPL ",
-        "description": "HIMMEL is a leading provider of interior solutions. As one of Indonesia’s largest High Pressure Laminates (HPL) brand, our continuous investments in innovation and operation maintain the recognition of HIMMEL as a premium national brand",
+        "description": "HIMMEL is a leading provider of interior solutions. As one of Indonesia's largest High Pressure Laminates (HPL) brand, our continuous investments in innovation and operation maintain the recognition of HIMMEL as a premium national brand",
         "link": "https://himmel-hpl-website.vercel.app/",
         "techIcons": [
             "/AboutMe/reactjs.png",
@@ -218,6 +230,7 @@
     {
         "id": 13,
         "type": "Front End Web Development",
+        "category": "Company Profile",
         "title": "Alamas Niaga Gemilang",
         "description": "Founded in 2023, PT Alamas Niaga Gemilang which headquartered in North Jakarta, began as a specialized chemical solutions provider for the polyurethane foam manufacturing industry",
         "link": "https://alamas-website.vercel.app/",
@@ -239,6 +252,7 @@
     {
         "id": 14,
         "type": "Full Stack Web Development",
+        "category": "E-Commerce",
         "title": "Katiga",
         "description": "Providing premium quality baby bedding and family towels since 2001. Certified by SNI, OEKO-TEX®, and K3L.",
         "link": "https://katiga.id/",
@@ -262,6 +276,7 @@
     {
         "id": 15,
         "type": "Front End Web Development",
+        "category": "Company Profile",
         "title": "Reno Express",
         "description": "Reno Express specializes in anti-leak bathroom renewal in Singapore, offering permanent waterproofing solutions with a standardized process and guaranteed results.",
         "link": "https://renoexpress.sg/",
@@ -282,6 +297,7 @@
     {
         "id": 16,
         "type": "Full Stack Web Development",
+        "category": "Company Profile",
         "title": "Sanxin Studio",
         "description": "Sanxin Studio adalah agen kreatif berbasis di Bekasi yang berfokus pada produksi konten video, manajemen media sosial, dan strategi pemasaran digital.",
         "link": "https://www.sanxinstudio.com",
@@ -305,6 +321,7 @@
     {
         "id": 17,
         "type": "Full Stack Web Development",
+        "category": "Community",
         "title": "Mewangi",
         "description": "Komunitas Parfum Pertama di Indonesia. Mewangi hadir sebagai wadah bagi para enthusiast parfum di Indonesia untuk saling berbagi, berdiskusi, dan mengeksplorasi dunia wewangian yang tak terbatas.",
         "link": "https://www.mewangi.id",
@@ -327,6 +344,7 @@
     {
         "id": 18,
         "type": "Full Stack Web Development",
+        "category": "Company Profile",
         "title": "Navale Balancing",
         "description": "Spesialis overhaul turbocharger, mesin 2-tak & 4-tak, pompa laut, kalibrasi governor, dan instalasi kelistrikan kapal. Lebih dari 8 tahun pengalaman melayani industri maritim Indonesia.",
         "link": "https://www.navalebalancing.com/",
@@ -349,6 +367,7 @@
     {
         "id": 19,
         "type": "Full Stack Web Development",
+        "category": "E-Commerce",
         "title": "GeekyTech",
         "description": "",
         "link": "https://www.geeky.id",
