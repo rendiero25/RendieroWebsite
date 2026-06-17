@@ -386,5 +386,51 @@
             "/AboutMe/cloudinary.png",
             "/AboutMe/vscode.png"
         ]
+    },
+    {
+        "id": 20,
+        "type": "Full Stack Web Development",
+        "category": "Company Profile",
+        "title": "Nadaz",
+        "description": "PT. Arta Prima Glassindo (NADAZ) — spesialis kaca tempered dan aluminium premium di Jabodetabek. Melayani glassboard korporat, cermin gym, partisi kaca, dan pintu aluminium untuk korporat, instansi pemerintah, serta proyek komersial sejak 2016.",
+        "link": "https://www.nadaz.co.id",
+        "techIcons": [
+            "/AboutMe/reactjs.png",
+            "/AboutMe/typescript.png",
+            "/AboutMe/gsap.png",
+            "/AboutMe/nodejs.png",
+            "/AboutMe/expressjs.png",
+            "/AboutMe/tailwindcss.png",
+            "/AboutMe/vite.png",
+            "/AboutMe/mongodb.png",
+            "/AboutMe/figma.png",
+            "/AboutMe/git.png",
+            "/AboutMe/github.png",
+            "/AboutMe/cloudinary.png",
+            "/AboutMe/vscode.png"
+        ]
+    },
+    {
+        "id": 21,
+        "type": "Full Stack Web Development",
+        "category": "Company Profile",
+        "title": "Kaemba Buntusu",
+        "description": "CV. Kaemba Buntusu Indonesia — eksportir komoditas pertanian dari Sulawesi. Menghubungkan kelapa, kopra, cengkeh, lada, dan kakao dari petani lokal ke pasar Asia, Timur Tengah, dan Eropa melalui pelabuhan Makassar.",
+        "link": "https://www.kaembabuntusu.com",
+        "techIcons": [
+            "/AboutMe/reactjs.png",
+            "/AboutMe/typescript.png",
+            "/AboutMe/gsap.png",
+            "/AboutMe/nodejs.png",
+            "/AboutMe/expressjs.png",
+            "/AboutMe/tailwindcss.png",
+            "/AboutMe/vite.png",
+            "/AboutMe/mongodb.png",
+            "/AboutMe/figma.png",
+            "/AboutMe/git.png",
+            "/AboutMe/github.png",
+            "/AboutMe/cloudinary.png",
+            "/AboutMe/vscode.png"
+        ]
     }
 ]
