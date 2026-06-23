@@ -1,158 +1,250 @@
-import { useState, useEffect } from 'react';
-import { motion, AnimatePresence, useMotionValue, useSpring, useTransform, useVelocity } from 'framer-motion';
-import LightRays from '../components/LightRays';
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
+import { motion, useReducedMotion } from "motion/react";
 
-const CATEGORY_ORDER = ['Company Profile', 'E-Commerce', 'Platform', 'Community'];
+import LightRays from "../components/LightRays";
+import PortfolioCaseModal from "../components/portfolio/PortfolioCaseModal";
+import PortfolioCasePanel from "../components/portfolio/PortfolioCasePanel";
+import PortfolioProjectRow from "../components/portfolio/PortfolioProjectRow";
+
+const CATEGORY_ORDER = ["Company Profile", "E-Commerce", "Platform", "Community"];
+const ENTRANCE_EASE = [0.16, 1, 0.3, 1];
+const FOCUS_RING =
+    "focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent";
 
 const Portfolio = () => {
+    const shouldReduceMotion = useReducedMotion();
+    const [portfolio, setPortfolio] = useState([]);
+    const [activeCategory, setActiveCategory] = useState("All");
+    const [displayedProjectId, setDisplayedProjectId] = useState(null);
+    const [isCaseModalOpen, setIsCaseModalOpen] = useState(false);
+    const [panelTop, setPanelTop] = useState(0);
 
-  const [hoveredIndex, setHoveredIndex] = useState(null);
-  const [portfolio, setPortfolio] = useState([]);
-  const [activeCategory, setActiveCategory] = useState('All');
+    const gridRef = useRef(null);
+    const panelRef = useRef(null);
+    const rowRefs = useRef(new Map());
+    const scrollRef = useRef(null);
 
-  const cursorX = useMotionValue(0);
-  const cursorY = useMotionValue(0);
-  const springConfig = { damping: 25, stiffness: 300 };
-  const cursorXSpring = useSpring(cursorX, springConfig);
-  const cursorYSpring = useSpring(cursorY, springConfig);
-  const cursorXVelocity = useVelocity(cursorXSpring);
-  const cursorYVelocity = useVelocity(cursorYSpring);
-  const rotateX = useTransform(cursorYVelocity, [-2000, 2000], [10, -10]);
-  const rotateY = useTransform(cursorXVelocity, [-2000, 2000], [-10, 10]);
+    useEffect(() => {
+        import("../data/portfolio.json")
+            .then((module) => setPortfolio(module.default))
+            .catch((error) => console.error("Error loading portfolio data:", error));
+    }, []);
 
-  useEffect(() => {
-    import('../data/portfolio.json')
-      .then(module => setPortfolio(module.default))
-      .catch(error => console.error('Error loading portfolio data:', error));
+    const categories = useMemo(
+        () => ["All", ...CATEGORY_ORDER.filter((cat) => portfolio.some((p) => p.category === cat))],
+        [portfolio]
+    );
 
-    const handleMouseMove = (e) => {
-      cursorX.set(e.clientX);
-      cursorY.set(e.clientY);
-    };
+    const filtered = useMemo(
+        () =>
+            activeCategory === "All"
+                ? portfolio
+                : portfolio.filter((project) => project.category === activeCategory),
+        [portfolio, activeCategory]
+    );
 
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, []);
+    const activeProject = filtered.find((project) => project.id === displayedProjectId) ?? null;
 
-  const categories = ['All', ...CATEGORY_ORDER.filter(cat => portfolio.some(p => p.category === cat))];
-  const filtered = activeCategory === 'All' ? portfolio : portfolio.filter(p => p.category === activeCategory);
+    useEffect(() => {
+        if (!filtered.length) {
+            setDisplayedProjectId(null);
+            setIsCaseModalOpen(false);
+            return;
+        }
 
-  return (
-    <div className="relative h-screen overflow-hidden">
-      <div className="fixed inset-0 bg-background">
-        <LightRays
-          raysOrigin="top-center"
-          raysColor="#ffffff"
-          raysSpeed={1.5}
-          lightSpread={1}
-          rayLength={9}
-          followMouse={true}
-          mouseInfluence={0.1}
-          noiseAmount={0.1}
-          distortion={0.05}
-        />
-      </div>
-      <div className="relative h-full overflow-y-auto scrollbar-hide">
-        <div className="min-h-screen flex flex-col items-center pt-30 pb-10">
+        setDisplayedProjectId(filtered[0].id);
+    }, [filtered]);
 
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.3 }}
-            className="flex flex-wrap gap-3 mb-8 px-4"
-          >
-            {categories.map(cat => (
-              <button
-                key={cat}
-                onClick={() => { setActiveCategory(cat); setHoveredIndex(null); }}
-                className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all cursor-pointer ${
-                  activeCategory === cat
-                    ? 'bg-white text-black'
-                    : 'border border-white/30 text-white/50 hover:text-white hover:border-white/60'
-                }`}
-              >
-                {cat}
-              </button>
-            ))}
-          </motion.div>
+    useEffect(() => {
+        setIsCaseModalOpen(false);
+    }, [activeCategory]);
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-            className="max-w-4xl px-4 space-y-4 flex flex-col justify-center items-start"
-          >
-            {filtered.map((project, index) => (
-              <div
-                key={project.id}
-                className="relative flex flex-col justify-center items-start gap-5"
-                onMouseEnter={() => setHoveredIndex(index)}
-                onMouseLeave={() => setHoveredIndex(null)}
-              >
-                <motion.a
-                  href={project.link || '#'}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block text-5xl md:text-6xl lg:text-4xl font-bold py-4 relative z-10 flex gap-2 lg:gap-5 hover:text-blue-500"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{
-                    opacity: 1,
-                    y: 0,
-                    x: hoveredIndex === index ? 20 : 0
-                  }}
-                  transition={{
-                    type: "spring",
-                    stiffness: 300,
-                    damping: 20
-                  }}
-                >
-                  <span className="text-gray-500 font-light">{String(index + 1).padStart(2, '0')}</span>
-                  <span className="text-white hover:text-blue-500">{project.title}</span>
-                </motion.a>
+    useEffect(() => {
+        const mediaQuery = window.matchMedia("(min-width: 1024px)");
 
-                <AnimatePresence>
-                  {hoveredIndex === index && (
-                    <motion.div
-                      className="fixed left-1/2 top-1/2 transform -translate-y-1/2 ml-80 w-50"
-                      initial={{ opacity: 0, x: -20 }}
-                      animate={{
-                        opacity: 1,
-                        x: 0,
-                        transition: { delay: 0.1 }
-                      }}
-                      exit={{ opacity: 0, x: -20 }}
+        const handleChange = (event) => {
+            if (event.matches) setIsCaseModalOpen(false);
+        };
+
+        mediaQuery.addEventListener("change", handleChange);
+
+        return () => mediaQuery.removeEventListener("change", handleChange);
+    }, []);
+
+    const handleProjectActivate = useCallback((projectId) => {
+        setDisplayedProjectId(projectId);
+
+        if (!window.matchMedia("(min-width: 1024px)").matches) {
+            setIsCaseModalOpen(true);
+        }
+    }, []);
+
+    const handleCaseModalClose = useCallback(() => {
+        setIsCaseModalOpen(false);
+    }, []);
+
+    const updatePanelPosition = useCallback(() => {
+        if (!displayedProjectId || !gridRef.current) return;
+
+        const rowEl = rowRefs.current.get(displayedProjectId);
+        const panelEl = panelRef.current;
+        if (!rowEl) return;
+
+        const gridRect = gridRef.current.getBoundingClientRect();
+        const rowRect = rowEl.getBoundingClientRect();
+        const panelHeight = panelEl?.offsetHeight ?? 0;
+        const maxTop = Math.max(0, gridRef.current.offsetHeight - panelHeight);
+
+        let nextTop = rowRect.top - gridRect.top + rowRect.height / 2 - panelHeight / 2;
+        nextTop = Math.min(Math.max(0, nextTop), maxTop);
+
+        setPanelTop(nextTop);
+    }, [displayedProjectId]);
+
+    useLayoutEffect(() => {
+        updatePanelPosition();
+    }, [updatePanelPosition, filtered, activeCategory]);
+
+    useEffect(() => {
+        const scrollEl = scrollRef.current;
+        window.addEventListener("resize", updatePanelPosition);
+        scrollEl?.addEventListener("scroll", updatePanelPosition, { passive: true });
+
+        return () => {
+            window.removeEventListener("resize", updatePanelPosition);
+            scrollEl?.removeEventListener("scroll", updatePanelPosition);
+        };
+    }, [updatePanelPosition]);
+
+    useEffect(() => {
+        const panelEl = panelRef.current;
+        if (!panelEl) return;
+
+        const observer = new ResizeObserver(() => updatePanelPosition());
+        observer.observe(panelEl);
+
+        return () => observer.disconnect();
+    }, [updatePanelPosition, activeProject?.id]);
+
+    const setRowRef = useCallback((projectId, node) => {
+        if (node) {
+            rowRefs.current.set(projectId, node);
+        } else {
+            rowRefs.current.delete(projectId);
+        }
+    }, []);
+
+    return (
+        <div className="relative min-h-screen overflow-hidden bg-background">
+            <div className="fixed inset-0 pointer-events-none">
+                <LightRays
+                    raysOrigin="top-center"
+                    raysColor="#ffffff"
+                    raysSpeed={1.5}
+                    lightSpread={1}
+                    rayLength={9}
+                    breakpoint={{
+                        1280: { rayLength: 2, raysSpeed: 1.2 },
+                    }}
+                    followMouse={true}
+                    mouseInfluence={0.1}
+                    noiseAmount={0.1}
+                    distortion={0.05}
+                />
+            </div>
+
+            <main ref={scrollRef} className="relative z-10 min-h-screen overflow-y-auto scrollbar-hide">
+                <div className="mx-auto flex min-h-screen max-w-6xl flex-col px-6 pb-16 pt-28 lg:px-8 lg:pt-32">
+                    <motion.header
+                        initial={shouldReduceMotion ? false : { opacity: 0, y: -12 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, ease: ENTRANCE_EASE }}
+                        className="mb-8 flex flex-col gap-4 lg:mb-10"
                     >
-                      <div className="bg-gray-800 bg-opacity-80 backdrop-blur-md p-6 rounded-lg flex flex-col justify-center items-start gap-5">
-                        <span className="text-white text-sm italic font-light">{project.type}</span>
+                        <p className="font-secondary text-accent text-xl uppercase tracking-wide">
+                            Portfolio
+                        </p>
+                        <h1 className="font-secondary text-white text-5xl sm:text-6xl uppercase leading-none">
+                            Selected work
+                        </h1>
+                        <p className="max-w-2xl text-white/65 text-base leading-relaxed">
+                            Explore projects by category. Each case shows the problem I solved as the
+                            developer behind the build.
+                        </p>
+                    </motion.header>
 
-                        <p className="text-white text-sm">{project.description}</p>
+                    <motion.div
+                        initial={shouldReduceMotion ? false : { opacity: 0, y: 8 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.45, delay: 0.1, ease: ENTRANCE_EASE }}
+                        className="mb-10 flex flex-wrap gap-2"
+                        role="tablist"
+                        aria-label="Project categories"
+                    >
+                        {categories.map((category) => {
+                            const isActive = activeCategory === category;
 
-                        <div className="flex flex-wrap gap-4">
-                          {project.techIcons.map((icon, i) => (
-                            <img
-                              key={i}
-                              src={icon}
-                              alt="tech icon"
-                              className="w-5 h-5 object-contain"
-                            />
-                          ))}
-                        </div>
-
-                        <div className="flex gap-4 mt-2">
-                          {project.liveUrl && <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline text-sm">Live Demo</a>}
-                          {project.repoUrl && <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline text-sm">Source Code</a>}
-                        </div>
-                      </div>
+                            return (
+                                <button
+                                    key={category}
+                                    type="button"
+                                    role="tab"
+                                    aria-selected={isActive}
+                                    onClick={() => setActiveCategory(category)}
+                                    className={`cursor-pointer rounded-full px-4 py-2 text-sm font-medium transition-colors duration-300 ease-[var(--ease-out-quart)] ${FOCUS_RING} ${
+                                        isActive
+                                            ? "bg-accent text-white"
+                                            : "bg-black/50 text-white/60 hover:bg-black/70 hover:text-white"
+                                    }`}
+                                >
+                                    {category}
+                                </button>
+                            );
+                        })}
                     </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
-            ))}
-          </motion.div>
+
+                    <div
+                        ref={gridRef}
+                        className="grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(280px,380px)] lg:gap-12"
+                    >
+                        <section aria-label="Project list" className="min-w-0">
+                            {filtered.map((project, index) => (
+                                <PortfolioProjectRow
+                                    key={project.id}
+                                    ref={(node) => setRowRef(project.id, node)}
+                                    project={project}
+                                    index={index}
+                                    isActive={displayedProjectId === project.id}
+                                    onActivate={handleProjectActivate}
+                                    onHoverStart={() => setDisplayedProjectId(project.id)}
+                                />
+                            ))}
+                        </section>
+
+                        <div className="relative hidden lg:block self-stretch z-20 pointer-events-none">
+                            <motion.div
+                                ref={panelRef}
+                                className="absolute left-0 right-0 w-full pointer-events-auto"
+                                animate={{ top: panelTop }}
+                                transition={{
+                                    duration: shouldReduceMotion ? 0 : 0.35,
+                                    ease: ENTRANCE_EASE,
+                                }}
+                            >
+                                <PortfolioCasePanel project={activeProject} />
+                            </motion.div>
+                        </div>
+                    </div>
+
+                    <PortfolioCaseModal
+                        project={activeProject}
+                        isOpen={isCaseModalOpen}
+                        onClose={handleCaseModalClose}
+                    />
+                </div>
+            </main>
         </div>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default Portfolio;

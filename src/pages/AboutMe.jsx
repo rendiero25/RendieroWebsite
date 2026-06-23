@@ -1,125 +1,28 @@
-import { useHeaderContext } from "../context/HeaderContext";
-import { motion } from "motion/react";
-import { useNavigate } from "react-router-dom";
-// import Aurora from "../components/Autora";
-import LightRays from "../components/LightRays";
+import { useState } from "react";
+import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 
-import Pic from "../assets/AboutMe/pic.png";
-import Affinity from "../assets/AboutMe/affinitydesigner.png";
-import Github from "../assets/AboutMe/github.png";
-import Canva from "../assets/AboutMe/canva.png";
-import Claude from "../assets/AboutMe/claude.png";
-import Express from "../assets/AboutMe/expressjs.png";
-import Figma from "../assets/AboutMe/figma.png";
-import Firebase from "../assets/AboutMe/firebase.png";
-import Firefox from "../assets/AboutMe/firefox.png";
-import Git from "../assets/AboutMe/git.png";
-import Gsap from "../assets/AboutMe/gsap.png";
-import Inkscape from "../assets/AboutMe/inkscape.png";
-import Javascript from "../assets/AboutMe/javascript.png";
-import Materialui from "../assets/AboutMe/materialui.png";
-import Nextjs from "../assets/AboutMe/nextjs.png";
-import Nodejs from "../assets/AboutMe/nodejs.png";
-import Reactjs from "../assets/AboutMe/reactjs.png";
-import Tailwindcss from "../assets/AboutMe/tailwindcss.png";
-import Threejs from "../assets/AboutMe/threejs.png";
-import Typescript from "../assets/AboutMe/typescript.png";
-import Vite from "../assets/AboutMe/vite.png";
-import Mongodb from "../assets/AboutMe/mongodb.png";
-import Postman from "../assets/AboutMe/postman.png";
-import Vercel from "../assets/AboutMe/vercel.png";
-import Windsurf from "../assets/AboutMe/windsurf.png";
-import Wordpress from "../assets/AboutMe/wordpress.png";
-import Motion from "../assets/AboutMe/motion.png";
+import LightRays from "../components/LightRays";
+import ProfilePanel from "../components/about/ProfilePanel";
+import SkillExplorer from "../components/about/SkillExplorer";
+import { BIO_SECTIONS, STATS } from "../data/aboutSkills";
 
 import DownloadIcon from "../assets/AboutMe/download.png";
 
-import GithubSvg from "../assets/AboutMe/github.svg";
-import LinkedinSvg from "../assets/AboutMe/linkedin.svg";
-import InstagramSvg from "../assets/AboutMe/instagram.svg";
-import MediumSvg from "../assets/AboutMe/medium.svg";
-import MailSvg from "../assets/AboutMe/mail.svg";
-import WhatsappSvg from "../assets/AboutMe/whatsapp.svg";
+const ENTRANCE_EASE = [0.16, 1, 0.3, 1];
+const FOCUS_RING =
+    "focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent";
 
-// import * as THREE from "three";
-// import HALO from "vanta/dist/vanta.halo.min";
+const cvPath = "/cvRendyT.pdf";
+const cvName = "cvRendyT.pdf";
 
 const AboutMe = () => {
-
-    const { isOpen } = useHeaderContext();
-
-    const cvPath = '/cvRendyT.pdf';
-    const cvName = 'cvRendyT.pdf';
-
-    const navigate = useNavigate();
-
-    const goToWhatsapp = () => {
-        window.open("https://wa.me/6281298790058?text=Halo,Saya%20tertarik%20dengan%20portfolio%20Anda,%20bisa%20berdiskusi%20lebih%20lanjut%20mengenai%20pembuatan%20website?", "_blank", "noopener,noreferrer");
-    }
-
-    const goToGithub = () => {
-        window.open("https://github.com/rendiero25", "_blank", "noopener,noreferrer");
-    }
-
-    const goToLinkedin = () => {
-        window.open("https://linkedin.com/in/rendytomaluweng", "_blank", "noopener,noreferrer");
-    }
-
-    const goToInstagram = () => {
-        window.open("https://instagram.com/rendiero25", "_blank", "noopener,noreferrer");
-    }
-
-    const goToMedium = () => {
-        window.open("https://rendiero.medium.com/", "_blank", "noopener,noreferrer");
-    }
-
-    const goToMail = () => {
-        window.open("mailto:workspace.rendy@gmail.com", "_blank", "noopener,noreferrer");
-    }
-
-    // const [haloEffect, setHaloEffect] = useState(null);
-    // const haloRef = useRef(null);
-
-    // useEffect(() => {
-    //     if (!haloEffect && haloRef.current) {
-    //         try {
-    //             const effect = HALO({
-    //                 el: haloRef.current,
-    //                 THREE: THREE, // Explicitly pass THREE
-    //                 mouseControls: true,
-    //                 touchControls: true,
-    //                 gyroControls: false,
-    //                 minHeight: 200.00,
-    //                 minWidth: 200.00,
-    //                 backgroundColor: 0x282C38,
-    //                 backgroundAlpha: 0,
-    //                 xOffset: -0.17
-    //             });
-    //             setHaloEffect(effect);
-    //         } catch (error) {
-    //             console.error("Error initializing Vanta effect:", error);
-    //         }
-    //     }
-
-    //     // Cleanup function
-    //     return () => {
-    //         if (haloEffect) {
-    //             haloEffect.destroy();
-    //             setHaloEffect(null);
-    //         }
-    //     };
-    // }, [haloEffect]);
+    const shouldReduceMotion = useReducedMotion();
+    const [activeBio, setActiveBio] = useState(BIO_SECTIONS[0].id);
+    const activeBioContent = BIO_SECTIONS.find((section) => section.id === activeBio);
 
     return (
-        <div className="relative bg-background w-full min-h-screen lg:h-screen flex justify-center items-center">
-            <div className="absolute h-full w-full">
-                {/* <Aurora
-                    colorStops={["#7cff67", "#b19eef", "#5227ff"]}
-                    blend={0.5}
-                    amplitude={1.0}
-                    speed={0.5}
-                /> */}
-
+        <div className="relative bg-background w-full min-h-screen lg:min-h-0 lg:h-screen overflow-x-hidden">
+            <div className="absolute inset-0 h-full w-full pointer-events-none">
                 <LightRays
                     raysOrigin="top-center"
                     raysColor="#ffffff"
@@ -127,7 +30,7 @@ const AboutMe = () => {
                     lightSpread={1}
                     rayLength={9}
                     breakpoint={{
-                        1280: { rayLength: 2, raysSpeed: 1.2 }
+                        1280: { rayLength: 2, raysSpeed: 1.2 },
                     }}
                     followMouse={true}
                     mouseInfluence={0.1}
@@ -137,121 +40,118 @@ const AboutMe = () => {
                 />
             </div>
 
-            <div className="relative lg:absolute z-10 h-full flex flex-col lg:flex-row justify-center items-center gap-25 pb-15 lg:pb-0">
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5 }}
+            <main className="relative z-10 w-full min-h-screen lg:h-full flex flex-col lg:flex-row justify-center items-center gap-12 lg:gap-16 px-6 sm:px-8 py-28 lg:py-12 pb-16">
+                <motion.aside
+                    initial={{ opacity: 0, x: shouldReduceMotion ? 0 : -24 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.6, ease: ENTRANCE_EASE }}
+                    className="w-full lg:w-auto shrink-0"
                 >
-                    <div className="mt-23 lg:mt-0 flex flex-col justify-center items-center gap-8">
-                        <img src={Pic} alt="pic" className="w-50 lg:w-30 xl:w-45 3xl:w-50 h-full drop-shadow-2xl" />
+                    <ProfilePanel />
+                </motion.aside>
 
-                        <div className="flex flex-row flex-wrap justify-center items-center gap-5 lg:gap-2 px-8">
-                            <button className="cursor-pointer hover:scale-110 hover:shadow-2xl">
-                                <img src={GithubSvg} alt="GithubIcon" className="w-13 lg:w-10" onClick={goToGithub} />
-                            </button>
-                            <button className="cursor-pointer hover:scale-110 hover:shadow-2xl">
-                                <img src={LinkedinSvg} alt="LinkedinIcon" className="w-13 lg:w-10" onClick={goToLinkedin} />
-                            </button>
-                            <button className="cursor-pointer hover:scale-110 hover:shadow-2xl">
-                                <img src={InstagramSvg} alt="InstagramIcon" className="w-13 lg:w-10" onClick={goToInstagram} />
-                            </button>
-                            <button className="cursor-pointer hover:scale-110 hover:shadow-2xl">
-                                <img src={MediumSvg} alt="MediumIcon" className="w-13 lg:w-10" onClick={goToMedium} />
-                            </button>
-                            <button className="cursor-pointer hover:scale-110 hover:shadow-2xl">
-                                <img src={MailSvg} alt="MailSvg" className="w-13 lg:w-10" onClick={goToMail} />
-                            </button>
-                            <button className="cursor-pointer hover:scale-110 hover:shadow-2xl">
-                                <img src={WhatsappSvg} alt="WhatsappSvg" className="w-13 lg:w-10" onClick={goToWhatsapp} />
-                            </button>
+                <motion.section
+                    initial={{ opacity: 0, x: shouldReduceMotion ? 0 : 24 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.6, delay: 0.1, ease: ENTRANCE_EASE }}
+                    className="w-full max-w-3xl flex flex-col gap-8"
+                >
+                    <div className="flex flex-col gap-3 text-center lg:text-left">
+                        <p className="font-secondary text-accent text-2xl tracking-wide uppercase">
+                            About Me
+                        </p>
+                        <h1 className="font-secondary text-white text-5xl sm:text-6xl lg:text-5xl 2xl:text-6xl leading-none uppercase">
+                            Rendy Norman Tomaluweng
+                        </h1>
+                        <p className="text-white/70 text-lg lg:text-base 2xl:text-lg">
+                            Full Stack Web Developer
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-3 gap-3">
+                        {STATS.map((stat, index) => (
+                            <motion.div
+                                key={stat.label}
+                                initial={{ opacity: 0, y: 16 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{
+                                    duration: 0.45,
+                                    delay: 0.15 + index * 0.08,
+                                    ease: ENTRANCE_EASE,
+                                }}
+                                whileHover={shouldReduceMotion ? undefined : { y: -3, scale: 1.02 }}
+                                className="rounded-2xl bg-black/45 px-3 py-4 text-center"
+                            >
+                                <p className="font-secondary text-accent text-3xl lg:text-2xl 2xl:text-3xl leading-none">
+                                    {stat.value}
+                                </p>
+                                <p className="text-white/70 text-xs sm:text-sm mt-2 leading-snug">{stat.label}</p>
+                            </motion.div>
+                        ))}
+                    </div>
+
+                    <div className="flex flex-col gap-4">
+                        <div
+                            className="flex flex-row flex-wrap justify-center lg:justify-start gap-2"
+                            role="tablist"
+                            aria-label="Bio sections"
+                        >
+                            {BIO_SECTIONS.map((section) => {
+                                const isActive = activeBio === section.id;
+
+                                return (
+                                    <button
+                                        key={section.id}
+                                        type="button"
+                                        role="tab"
+                                        aria-selected={isActive}
+                                        onClick={() => setActiveBio(section.id)}
+                                        className={`cursor-pointer rounded-full px-4 py-2 text-sm font-medium transition-colors duration-300 ease-[var(--ease-out-quart)] ${FOCUS_RING} ${
+                                            isActive
+                                                ? "bg-white text-background"
+                                                : "bg-black/50 text-white/70 hover:text-white hover:bg-black/70"
+                                        }`}
+                                    >
+                                        {section.label}
+                                    </button>
+                                );
+                            })}
+                        </div>
+
+                        <div className="relative min-h-32 rounded-2xl bg-black/35 px-5 py-5">
+                            <AnimatePresence mode="wait">
+                                <motion.p
+                                    key={activeBio}
+                                    role="tabpanel"
+                                    initial={shouldReduceMotion ? false : { opacity: 0, y: 10 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    exit={shouldReduceMotion ? undefined : { opacity: 0, y: -8 }}
+                                    transition={{ duration: 0.3, ease: ENTRANCE_EASE }}
+                                    className="text-white text-lg lg:text-base 2xl:text-lg leading-relaxed"
+                                >
+                                    {activeBioContent?.content}
+                                </motion.p>
+                            </AnimatePresence>
                         </div>
                     </div>
-                </motion.div>
 
-                <div className="flex flex-col justify-center items-center lg:items-start gap-15 px-8">
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 0.5, delay: 0.2 }}
+                    <SkillExplorer />
+
+                    <motion.a
+                        href={cvPath}
+                        download={cvName}
+                        initial={{ opacity: 0, y: 12 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.45, delay: 0.35, ease: ENTRANCE_EASE }}
+                        whileHover={shouldReduceMotion ? undefined : { scale: 1.03, y: -2 }}
+                        whileTap={shouldReduceMotion ? undefined : { scale: 0.98 }}
+                        className={`self-center lg:self-start cursor-pointer bg-accent px-6 py-3 rounded-xl flex flex-row justify-center items-center gap-3 transition-shadow duration-300 hover:shadow-lg hover:shadow-accent/30 ${FOCUS_RING}`}
                     >
-                        <p className="text-white text-2xl lg:text-lg 2xl:text-xl lg:max-w-2xl font-normal text-center lg:text-left leading-normal">
-                            With a background in technology, I’m a passionate and
-                            experienced Front-End Web and Mobile Developer specializing in React JS,
-                            React Native,TailwindCSS, Nativewind,JavaScript, TypeScript, Mongodb, GSAP,
-                            Motion, and Three JS. I focus on crafting modern, responsive, and user-friendly
-                            interfaces through clean code, thoughtful design, and seamless
-                            API integration. Beyond development, I’m also an Offensive Security
-                            Enthusiast with a strong interest in web security and bug bounty,
-                            exploring vulnerabilities to help build safer and more resilient
-                            applications. <br /><br />
-
-                            Successfully completed over 15 projects with a 95% client
-                            satisfaction rate. I focus is on building functional web
-                            applications that enhance user experiences and deliver real
-                            value to businesses.
-                        </p>
-                    </motion.div>
-
-                    <div className="flex flex-col justify-center items-start gap-10">
-                        <motion.div
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ duration: 0.5, delay: 0.4 }}
-                            className="flex flex-row flex-wrap justify-center lg:justify-start items-center gap-5 lg:max-w-lg"
-                        >
-                            <img src={Reactjs} alt="Reactjs" className="w-15 lg:w-8 2xl:w-10" />
-                            <img src={Tailwindcss} alt="Tailwindcss" className="w-15 lg:w-8 2xl:w-10" />
-                            <img src={Nodejs} alt="Nodejs" className="w-15 lg:w-8 2xl:w-10" />
-                            <img src={Mongodb} alt="Mongodb" className="w-15 lg:w-8 2xl:w-10" />
-                            <img src={Firebase} alt="Firebase" className="w-15 lg:w-8 2xl:w-10" />
-                            <img src={Express} alt="Express" className="w-15 lg:w-8 2xl:w-10" />
-                            <img src={Javascript} alt="Javascript" className="w-15 lg:w-8 2xl:w-10" />
-                            <img src={Typescript} alt="Typescript" className="w-15 lg:w-8 2xl:w-10" />
-                            <img src={Materialui} alt="Materialui" className="w-15 lg:w-8 2xl:w-10" />
-                            <img src={Nextjs} alt="Nextjs" className="w-15 lg:w-8 2xl:w-10" />
-                            <img src={Gsap} alt="Gsap" className="w-15 lg:w-8 2xl:w-10" />
-                            <img src={Motion} alt="Motion" className="w-15 lg:w-8 2xl:w-10" />
-                            <img src={Wordpress} alt="Wordpress" className="w-15 lg:w-8 2xl:w-10" />
-                            <img src={Threejs} alt="Threejs" className="w-15 lg:w-8 2xl:w-10" />
-                            <img src={Git} alt="Git" className="w-15 lg:w-8 2xl:w-10" />
-                            <img src={Vite} alt="Vite" className="w-15 lg:w-8 2xl:w-10" />
-                        </motion.div>
-
-                        <motion.div
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ duration: 0.5, delay: 0.6 }}
-                            className="flex flex-row flex-wrap justify-center lg:justify-start items-center gap-5 lg:max-w-lg"
-                        >
-                            <img src={Windsurf} alt="Windsurf" className="w-15 lg:w-8 2xl:w-10" />
-                            <img src={Firefox} alt="Firefox" className="w-15 lg:w-8 2xl:w-10" />
-                            <img src={Claude} alt="Claude" className="w-15 lg:w-8 2xl:w-10" />
-                            <img src={Postman} alt="Postman" className="w-15 lg:w-8 2xl:w-10" />
-                            <img src={Github} alt="Github" className="w-15 lg:w-8 2xl:w-10" />
-                            <img src={Figma} alt="Figma" className="w-15 lg:w-8 2xl:w-10" />
-                            <img src={Affinity} alt="Affinity" className="w-15 lg:w-8 2xl:w-10" />
-                            <img src={Canva} alt="Canva" className="w-15 lg:w-8 2xl:w-10" />
-                            <img src={Inkscape} alt="Inkscape" className="w-15 lg:w-8 2xl:w-10" />
-                            <img src={Vercel} alt="Vercel" className="w-15 lg:w-8 2xl:w-10" />
-                        </motion.div>
-                    </div>
-
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 0.5, delay: 0.8 }}
-                    >
-                        <a
-                            href={cvPath}
-                            download={cvName}
-                            className="cursor-pointer bg-gradient-to-r from-[#1873FE] to-[#0E4598] px-6 py-3 rounded-xl flex flex-row justify-center items-center gap-3 hover:scale-105 hover:shadow-2xl">
-                            <span className="text-white font-medium text-xl">Download my CV</span>
-                            <img src={DownloadIcon} alt="file download" className="w-5" />
-                        </a>
-                    </motion.div>
-                </div>
-            </div>
+                        <span className="text-white font-medium text-xl">Download my CV</span>
+                        <img src={DownloadIcon} alt="" aria-hidden="true" className="w-5" />
+                    </motion.a>
+                </motion.section>
+            </main>
         </div>
     );
 };

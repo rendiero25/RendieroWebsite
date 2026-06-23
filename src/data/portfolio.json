@@ -17,7 +17,12 @@
             "/AboutMe/github.png",
             "/AboutMe/vercel.png",
             "/AboutMe/windsurf.png"
-        ]
+        ],
+        "caseSolved": {
+            "challenge": "Travel listings were hard to scan and book on mobile.",
+            "approach": "Built a responsive React + MUI flow with clear destination hierarchy and fast filtering.",
+            "impact": "Users can discover and book activities in fewer steps across devices."
+        }
     },
     {
         "id": 2,
@@ -39,7 +44,12 @@
             "/AboutMe/github.png",
             "/AboutMe/vercel.png",
             "/AboutMe/windsurf.png"
-        ]
+        ],
+        "caseSolved": {
+            "challenge": "University information was scattered across static pages.",
+            "approach": "Shipped a full-stack platform with Firebase auth and structured program data.",
+            "impact": "Students get one guided path from search to academic planning."
+        }
     },
     {
         "id": 3,
@@ -56,7 +66,12 @@
             "/AboutMe/github.png",
             "/AboutMe/vercel.png",
             "/AboutMe/windsurf.png"
-        ]
+        ],
+        "caseSolved": {
+            "challenge": "Legacy site failed to communicate industrial product lines clearly.",
+            "approach": "Rebuilt the company profile in React with modular service sections.",
+            "impact": "B2B visitors understand power system offerings faster."
+        }
     },
     {
         "id": 4,
@@ -73,7 +88,12 @@
             "/AboutMe/github.png",
             "/AboutMe/vercel.png",
             "/AboutMe/windsurf.png"
-        ]
+        ],
+        "caseSolved": {
+            "challenge": "Four business segments were buried in dense corporate copy.",
+            "approach": "Designed a segment-first layout with Tailwind and clear navigation.",
+            "impact": "Electrical product lines are easier to explore for buyers."
+        }
     },
     {
         "id": 5,
@@ -95,7 +115,12 @@
             "/AboutMe/github.png",
             "/AboutMe/vercel.png",
             "/AboutMe/windsurf.png"
-        ]
+        ],
+        "caseSolved": {
+            "challenge": "A holding brand needed one site for multiple subsidiaries.",
+            "approach": "Delivered a MongoDB-backed React site with motion-led storytelling.",
+            "impact": "Defense and security units are presented under one credible group identity."
+        }
     },
     {
         "id": 6,
@@ -112,7 +137,12 @@
             "/AboutMe/git.png",
             "/AboutMe/github.png",
             "/AboutMe/windsurf.png"
-        ]
+        ],
+        "caseSolved": {
+            "challenge": "Global hiring value proposition was not converting visitors.",
+            "approach": "Crafted a data-driven landing experience with recruiter-focused messaging.",
+            "impact": "Clearer trust signals for enterprise hiring decisions."
+        }
     },
     {
         "id": 7,
@@ -133,7 +163,12 @@
             "/AboutMe/github.png",
             "/AboutMe/vercel.png",
             "/AboutMe/windsurf.png"
-        ]
+        ],
+        "caseSolved": {
+            "challenge": "Course catalog and checkout needed to scale for online education.",
+            "approach": "Implemented a MERN e-commerce flow with MongoDB product management.",
+            "impact": "Stable purchase journey for digital learning products."
+        }
     },
     {
         "id": 8,
@@ -144,7 +179,12 @@
         "link": "https://isibangunan.com/",
         "techIcons": [
             "/AboutMe/wordpress.png"
-        ]
+        ],
+        "caseSolved": {
+            "challenge": "Building material inventory was difficult to browse online.",
+            "approach": "Structured a WordPress storefront for vinyl, marble, granite, and panels.",
+            "impact": "Customers can explore product categories without visiting showrooms first."
+        }
     },
     {
         "id": 9,
@@ -164,7 +204,12 @@
             "/AboutMe/github.png",
             "/AboutMe/vercel.png",
             "/AboutMe/windsurf.png"
-        ]
+        ],
+        "caseSolved": {
+            "challenge": "Automotive wiring services lacked a professional digital presence.",
+            "approach": "Built a full-stack company site with service pages and contact funnels.",
+            "impact": "Stronger regional visibility across Jabodetabek and Central Java."
+        }
     },
     {
         "id": 10,
@@ -183,7 +228,12 @@
             "/AboutMe/github.png",
             "/AboutMe/vercel.png",
             "/AboutMe/windsurf.png"
-        ]
+        ],
+        "caseSolved": {
+            "challenge": "Recruitment brand needed warmth without losing enterprise credibility.",
+            "approach": "Added Motion transitions and human-centered copy blocks in React.",
+            "impact": "Better reflects 30+ companies trusting their hiring process."
+        }
     },
     {
         "id": 11,
@@ -203,7 +253,12 @@
             "/AboutMe/github.png",
             "/AboutMe/vercel.png",
             "/AboutMe/windsurf.png"
-        ]
+        ],
+        "caseSolved": {
+            "challenge": "Photobooth services needed a visual site that sells the experience.",
+            "approach": "Combined GSAP and Motion for scroll-driven showcase sections.",
+            "impact": "Event clients see service options with more emotional pull."
+        }
     },
     {
         "id": 12,
@@ -225,7 +280,12 @@
             "/AboutMe/vercel.png",
             "/AboutMe/postman.png",
             "/AboutMe/webstorm.png"
-        ]
+        ],
+        "caseSolved": {
+            "challenge": "Premium HPL brand required a high-end digital feel.",
+            "approach": "Used TypeScript, GSAP, and refined typography for a luxury interior tone.",
+            "impact": "Website quality now matches product positioning."
+        }
     },
     {
         "id": 13,
@@ -247,7 +307,12 @@
             "/AboutMe/postman.png",
             "/AboutMe/vercel.png",
             "/AboutMe/webstorm.png"
-        ]
+        ],
+        "caseSolved": {
+            "challenge": "New chemical supplier had to earn trust quickly online.",
+            "approach": "Built an animated company profile highlighting polyurethane expertise.",
+            "impact": "Foam manufacturers get proof of capability on first visit."
+        }
     },
     {
         "id": 14,
@@ -271,7 +336,12 @@
             "/AboutMe/github.png",
             "/AboutMe/vercel.png",
             "/AboutMe/webstorm.png"
-        ]
+        ],
+        "caseSolved": {
+            "challenge": "Heritage bedding brand needed modern e-commerce with certifications.",
+            "approach": "Developed a full-stack shop surfacing SNI and OEKO-TEX credentials.",
+            "impact": "Online channel supports a brand trusted since 2001."
+        }
     },
     {
         "id": 15,
@@ -292,7 +362,12 @@
             "/AboutMe/github.png",
             "/AboutMe/vercel.png",
             "/AboutMe/webstorm.png"
-        ]
+        ],
+        "caseSolved": {
+            "challenge": "Service process for bathroom waterproofing was unclear to leads.",
+            "approach": "Mapped Reno Express steps into a structured, conversion-focused UI.",
+            "impact": "Singapore homeowners understand the anti-leak process before inquiry."
+        }
     },
     {
         "id": 16,
@@ -316,7 +391,12 @@
             "/AboutMe/vercel.png",
             "/AboutMe/cloudinary.png",
             "/AboutMe/vscode.png"
-        ]
+        ],
+        "caseSolved": {
+            "challenge": "Creative agency needed portfolio delivery plus manageable media.",
+            "approach": "Built a full-stack site with Cloudinary-backed video and social proof.",
+            "impact": "Clients see production work and digital strategy in one place."
+        }
     },
     {
         "id": 17,
@@ -339,7 +419,12 @@
             "/AboutMe/github.png",
             "/AboutMe/cloudinary.png",
             "/AboutMe/vscode.png"
-        ]
+        ],
+        "caseSolved": {
+            "challenge": "Indonesia lacked a dedicated community hub for perfume enthusiasts.",
+            "approach": "Launched a community platform with MongoDB and member-first features.",
+            "impact": "Enthusiasts can discuss, share, and explore fragrances together."
+        }
     },
     {
         "id": 18,
@@ -362,7 +447,12 @@
             "/AboutMe/github.png",
             "/AboutMe/cloudinary.png",
             "/AboutMe/vscode.png"
-        ]
+        ],
+        "caseSolved": {
+            "challenge": "Maritime technical services were hard to explain to ship operators.",
+            "approach": "Shipped a bilingual corporate site with service-specific credibility blocks.",
+            "impact": "Maritime clients understand turbocharger and engine overhaul scope faster."
+        }
     },
     {
         "id": 19,
@@ -385,7 +475,12 @@
             "/AboutMe/github.png",
             "/AboutMe/cloudinary.png",
             "/AboutMe/vscode.png"
-        ]
+        ],
+        "caseSolved": {
+            "challenge": "Tech retail needed a fast storefront for varied product lines.",
+            "approach": "Built a performant MERN e-commerce experience with GSAP highlights.",
+            "impact": "Shoppers browse gadgets with smoother product discovery."
+        }
     },
     {
         "id": 20,
@@ -408,7 +503,12 @@
             "/AboutMe/github.png",
             "/AboutMe/cloudinary.png",
             "/AboutMe/vscode.png"
-        ]
+        ],
+        "caseSolved": {
+            "challenge": "Glass and aluminium contractor projects were invisible online.",
+            "approach": "Designed a corporate site showcasing tempered glass and aluminium work.",
+            "impact": "Corporate and government buyers can evaluate capability before contact."
+        }
     },
     {
         "id": 21,
@@ -431,6 +531,11 @@
             "/AboutMe/github.png",
             "/AboutMe/cloudinary.png",
             "/AboutMe/vscode.png"
-        ]
+        ],
+        "caseSolved": {
+            "challenge": "Agricultural exporter needed credibility for international buyers.",
+            "approach": "Created an export-focused site for coconut, cocoa, and spice commodities.",
+            "impact": "Global buyers see supply chain reach from Sulawesi to major ports."
+        }
     }
 ]
