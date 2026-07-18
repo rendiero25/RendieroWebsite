@@ -126,7 +126,7 @@ const Index = () => {
 
                     <motion.div
                         {...entrance(0.25)}
-                        className={`relative overflow-hidden bg-elevated w-full lg:w-[30%] min-h-48 lg:min-h-0 lg:h-full rounded-3xl ${CARD_HOVER}`}
+                        className={`relative overflow-hidden bg-elevated w-auto min-h-48 lg:min-h-0 lg:h-full rounded-3xl ${CARD_HOVER}`}
                     >
                         <img
                             src={Pic}
@@ -140,7 +140,7 @@ const Index = () => {
                         {...entrance(0.4)}
                         src={Rec3}
                         overlay="dark"
-                        className={`w-full lg:w-[20%] h-auto lg:h-full px-10 lg:px-5 2xl:px-10 py-8 sm:py-20 md:py-35 lg:py-8 3xl:py-10 rounded-3xl font-secondary text-3xl sm:text-6xl lg:text-xl 2xl:text-3xl 3xl:text-4xl leading-tight ${CARD_HOVER}`}
+                        className={`w-full lg:w-[25%] h-auto lg:h-full px-10 lg:px-5 2xl:px-10 py-8 sm:py-20 md:py-35 lg:py-8 3xl:py-10 rounded-3xl font-secondary text-3xl sm:text-6xl lg:text-xl 2xl:text-3xl 3xl:text-4xl leading-tight ${CARD_HOVER}`}
                         contentClassName="flex flex-col justify-center items-start gap-6 md:gap-12 lg:gap-6"
                     >
                         <h2 className="text-white font-medium uppercase">
@@ -278,6 +278,7 @@ const Index = () => {
                         </motion.button>
                     </ImageSection>
                 </div>
+
             </div>
             </main>
         </div>

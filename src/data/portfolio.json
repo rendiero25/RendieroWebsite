@@ -16,12 +16,14 @@
             "/AboutMe/git.png",
             "/AboutMe/github.png",
             "/AboutMe/vercel.png",
-            "/AboutMe/windsurf.png"
+            "/AboutMe/vscode.png"
         ],
         "caseSolved": {
-            "challenge": "Travel listings were hard to scan and book on mobile.",
-            "approach": "Built a responsive React + MUI flow with clear destination hierarchy and fast filtering.",
-            "impact": "Users can discover and book activities in fewer steps across devices."
+            "challenge": "Travelers needed a faster way to compare destinations, activities, and booking options without losing context on smaller screens.",
+            "approach": "I translated the booking requirements into a clear information architecture, designed the destination-to-activity discovery flow, built the responsive React interface, connected and tested the supporting API flows, and prepared the application for deployment. The implementation was refined through responsive QA and interaction-focused iteration.",
+            "techStack": "React, Tailwind CSS, Material UI, Vite, Figma, Postman, Git, GitHub, Vercel, and VS Code were used to build, test, document, and deliver the platform.",
+            "innovation": "The experience uses a strong destination hierarchy, fast filtering, reusable activity presentation, and responsive booking states so users can move from exploration to decision-making with less friction.",
+            "impact": "Users can discover and compare travel activities more confidently, then continue toward booking through a consistent experience across desktop and mobile."
         }
     },
     {
@@ -43,12 +45,14 @@
             "/AboutMe/git.png",
             "/AboutMe/github.png",
             "/AboutMe/vercel.png",
-            "/AboutMe/windsurf.png"
+            "/AboutMe/vscode.png"
         ],
         "caseSolved": {
-            "challenge": "University information was scattered across static pages.",
-            "approach": "Shipped a full-stack platform with Firebase auth and structured program data.",
-            "impact": "Students get one guided path from search to academic planning."
+            "challenge": "Students needed one reliable place to understand universities, compare programs, and plan their next academic step instead of navigating disconnected information pages.",
+            "approach": "I started by mapping the student journey and turning the content into structured program and institution data. From there I built the React frontend and Node/Express services, integrated authentication and data flows, validated the experience across responsive breakpoints, and prepared the full-stack application for production delivery.",
+            "techStack": "React, Node.js, Express.js, Vite, Tailwind CSS, Firebase, Motion, Figma, Git, GitHub, Vercel, and VS Code support the platform, its data flow, interaction design, and deployment workflow.",
+            "innovation": "The platform turns a complex college search into a guided journey with structured comparison, clearer decision points, and progressive academic planning instead of presenting students with a static information dump.",
+            "impact": "Students get a more focused path from discovering suitable universities to understanding their options and planning the next stage of their education."
         }
     },
     {
@@ -65,12 +69,14 @@
             "/AboutMe/git.png",
             "/AboutMe/github.png",
             "/AboutMe/vercel.png",
-            "/AboutMe/windsurf.png"
+            "/AboutMe/vscode.png"
         ],
         "caseSolved": {
-            "challenge": "Legacy site failed to communicate industrial product lines clearly.",
-            "approach": "Rebuilt the company profile in React with modular service sections.",
-            "impact": "B2B visitors understand power system offerings faster."
+            "challenge": "The industrial product and power-system offering was difficult for B2B visitors to scan, understand, and connect with the company's capabilities.",
+            "approach": "I translated the business portfolio into a modular content structure, established a clear page hierarchy, built the React interface from reusable sections, refined the responsive behavior, and completed the visual and deployment QA needed for a dependable company profile.",
+            "techStack": "React, Tailwind CSS, Vite, Git, GitHub, Vercel, and VS Code were used to create a lightweight, maintainable, and deployment-ready frontend.",
+            "innovation": "The site presents technical offerings through progressive disclosure: visitors first see the business value, then move into focused product and service sections without being overwhelmed by industrial terminology.",
+            "impact": "B2B visitors can understand Deta Power's generator and power-system capabilities faster, improving the quality of the first commercial conversation."
         }
     },
     {
@@ -87,12 +93,14 @@
             "/AboutMe/git.png",
             "/AboutMe/github.png",
             "/AboutMe/vercel.png",
-            "/AboutMe/windsurf.png"
+            "/AboutMe/vscode.png"
         ],
         "caseSolved": {
-            "challenge": "Four business segments were buried in dense corporate copy.",
-            "approach": "Designed a segment-first layout with Tailwind and clear navigation.",
-            "impact": "Electrical product lines are easier to explore for buyers."
+            "challenge": "AISIKAI's four business segments needed to be understood quickly by buyers without forcing them to work through dense corporate copy.",
+            "approach": "I began by restructuring the information architecture around the four market segments, then designed and implemented a responsive React experience with clear navigation, content hierarchy, reusable layout patterns, and production QA across target screen sizes.",
+            "techStack": "React, Tailwind CSS, Vite, Git, GitHub, Vercel, and VS Code were used to deliver the frontend with consistent styling and a maintainable component structure.",
+            "innovation": "A segment-first browsing model lets visitors enter the part of the business relevant to them immediately, while shared visual patterns keep the wider corporate story coherent.",
+            "impact": "Electrical product lines are easier for buyers to explore, compare, and understand within the first visit."
         }
     },
     {
@@ -117,9 +125,11 @@
             "/AboutMe/windsurf.png"
         ],
         "caseSolved": {
-            "challenge": "A holding brand needed one site for multiple subsidiaries.",
-            "approach": "Delivered a MongoDB-backed React site with motion-led storytelling.",
-            "impact": "Defense and security units are presented under one credible group identity."
+            "challenge": "Elang Rajawali Group needed one credible digital presence that could represent multiple subsidiaries across defense, security, and technology without losing the identity of the parent group.",
+            "approach": "I mapped the group and subsidiary content model, designed a scalable page structure, implemented the React frontend and Node/Express backend, connected MongoDB-backed content, added motion-led transitions, and carried the project through responsive QA and deployment readiness.",
+            "techStack": "React, Tailwind CSS, MongoDB, Vite, Node.js, Express.js, Motion, Figma, Git, GitHub, Vercel, and Windsurf were used across the full-stack build and delivery workflow.",
+            "innovation": "The experience balances group-level authority with subsidiary-level clarity through modular storytelling, controlled motion, and a content structure that can scale as the organization grows.",
+            "impact": "Defense and security capabilities are presented under one consistent group identity while still giving each subsidiary enough space to communicate its role and expertise."
         }
     },
     {
@@ -136,12 +146,14 @@
             "/AboutMe/figma.png",
             "/AboutMe/git.png",
             "/AboutMe/github.png",
-            "/AboutMe/windsurf.png"
+            "/AboutMe/vscode.png"
         ],
         "caseSolved": {
-            "challenge": "Global hiring value proposition was not converting visitors.",
-            "approach": "Crafted a data-driven landing experience with recruiter-focused messaging.",
-            "impact": "Clearer trust signals for enterprise hiring decisions."
+            "challenge": "Seasearch Asia's global hiring proposition needed to communicate speed, expertise, and data-driven recruitment value clearly to enterprise decision-makers.",
+            "approach": "I converted the recruitment strategy into a focused information architecture, shaped the messaging around employer pain points, designed the visual hierarchy, implemented the responsive React frontend, and refined the experience through browser and interaction QA.",
+            "techStack": "React, Tailwind CSS, Vite, Figma, Git, GitHub, and VS Code were used to move from content and interface direction to a polished production frontend.",
+            "innovation": "The page uses recruiter-led storytelling and progressive proof points to make an abstract hiring service tangible, helping visitors understand the process before they commit to contact.",
+            "impact": "Enterprise visitors receive clearer trust signals and a more direct understanding of how Seasearch Asia can improve their hiring outcomes."
         }
     },
     {
@@ -162,12 +174,14 @@
             "/AboutMe/git.png",
             "/AboutMe/github.png",
             "/AboutMe/vercel.png",
-            "/AboutMe/windsurf.png"
+            "/AboutMe/vscode.png"
         ],
         "caseSolved": {
-            "challenge": "Course catalog and checkout needed to scale for online education.",
-            "approach": "Implemented a MERN e-commerce flow with MongoDB product management.",
-            "impact": "Stable purchase journey for digital learning products."
+            "challenge": "An online education business needed a dependable way to organize courses, present learning products, and guide users through a purchase journey.",
+            "approach": "I modelled the course and product requirements, designed the catalog and checkout flow, implemented the React frontend and Node/Express services, connected MongoDB product data, tested the critical user path, and prepared the application for production deployment.",
+            "techStack": "React, Node.js, Express.js, Vite, Tailwind CSS, MongoDB, Figma, Git, GitHub, Vercel, and VS Code support the full-stack e-commerce implementation.",
+            "innovation": "The experience treats courses as purchasable learning products, combining clear education-focused categorization with e-commerce interaction patterns that reduce uncertainty before checkout.",
+            "impact": "Learners can browse and evaluate digital learning products through a more stable, focused purchase journey."
         }
     },
     {
@@ -181,9 +195,11 @@
             "/AboutMe/wordpress.png"
         ],
         "caseSolved": {
-            "challenge": "Building material inventory was difficult to browse online.",
-            "approach": "Structured a WordPress storefront for vinyl, marble, granite, and panels.",
-            "impact": "Customers can explore product categories without visiting showrooms first."
+            "challenge": "A broad building-material catalog needed to be discoverable online, especially for customers comparing vinyl, marble, granite, ACP, wallpaper, and wall panels.",
+            "approach": "I translated the product inventory into a clear WordPress information architecture, organized categories and product presentation, refined the storefront content, and validated the browsing experience so customers could make an informed first selection online.",
+            "techStack": "WordPress was used as the content and storefront foundation, allowing the client to manage product categories and business information without a custom administration burden.",
+            "innovation": "The site extends the showroom experience into a structured digital catalog, using category-led discovery so customers can narrow a large material range before contacting the business.",
+            "impact": "Customers can explore the available building materials and shortlist suitable products before visiting a showroom or starting an inquiry."
         }
     },
     {
@@ -206,9 +222,11 @@
             "/AboutMe/windsurf.png"
         ],
         "caseSolved": {
-            "challenge": "Automotive wiring services lacked a professional digital presence.",
-            "approach": "Built a full-stack company site with service pages and contact funnels.",
-            "impact": "Stronger regional visibility across Jabodetabek and Central Java."
+            "challenge": "PT. CRT Kabelita needed a professional digital presence that could explain its automotive wiring harness and audio-video component capabilities to regional customers.",
+            "approach": "I organized the company's services and market coverage into a clear content model, built the React frontend and Node/Express backend, connected MongoDB-backed data, implemented service and contact pathways, and completed responsive QA through production preparation.",
+            "techStack": "React, Tailwind CSS, Vite, Node.js, Express.js, MongoDB, Git, GitHub, Vercel, and Windsurf were used to build and deliver the full-stack company profile.",
+            "innovation": "The site turns technical automotive capability into a buyer-oriented journey, connecting service explanation, regional credibility, and direct contact opportunities in a single flow.",
+            "impact": "The company has a stronger regional presence across Jabodetabek, West Java, and Central Java, with clearer paths for qualified inquiries."
         }
     },
     {
@@ -230,9 +248,11 @@
             "/AboutMe/windsurf.png"
         ],
         "caseSolved": {
-            "challenge": "Recruitment brand needed warmth without losing enterprise credibility.",
-            "approach": "Added Motion transitions and human-centered copy blocks in React.",
-            "impact": "Better reflects 30+ companies trusting their hiring process."
+            "challenge": "Dua Sisi needed to communicate a human-centered recruitment service while retaining the credibility expected by more than 30 business clients.",
+            "approach": "I shaped the content around trust, speed, and the human side of recruitment, designed a responsive React layout, introduced purposeful Motion transitions, and refined the page structure and interactions through iterative visual QA.",
+            "techStack": "React, Tailwind CSS, Vite, Motion, Figma, Git, GitHub, Vercel, and Windsurf were used to deliver the interface and its interaction system.",
+            "innovation": "The experience uses restrained motion and human-centered storytelling to add warmth without turning the corporate site into a generic animation showcase.",
+            "impact": "The website better reflects the trust behind Dua Sisi's recruitment process and gives prospective clients a clearer reason to start a conversation."
         }
     },
     {
@@ -255,9 +275,11 @@
             "/AboutMe/windsurf.png"
         ],
         "caseSolved": {
-            "challenge": "Photobooth services needed a visual site that sells the experience.",
-            "approach": "Combined GSAP and Motion for scroll-driven showcase sections.",
-            "impact": "Event clients see service options with more emotional pull."
+            "challenge": "Lensaloka Studio needed to sell the atmosphere and quality of its photobooth services, not only list packages and equipment.",
+            "approach": "I translated the event experience into a visual content journey, planned the service and gallery hierarchy, implemented the responsive React frontend, and coordinated GSAP and Motion interactions while keeping the page performant and usable on touch devices.",
+            "techStack": "React, GSAP, Tailwind CSS, Vite, Motion, Figma, Git, GitHub, Vercel, and Windsurf were used for the visual frontend, animation system, and delivery workflow.",
+            "innovation": "Scroll-driven reveals and staged visual sections create an editorial showcase that lets visitors feel the service quality before they reach the inquiry decision.",
+            "impact": "Event clients can understand the available photobooth experiences faster and are given a more compelling reason to request a package."
         }
     },
     {
@@ -273,18 +295,22 @@
             "/AboutMe/typescript.png",
             "/AboutMe/tailwindcss.png",
             "/AboutMe/vite.png",
+            "/AboutMe/mongodb.png",
+            "/AboutMe/cloudinary.png",
+            "/AboutMe/nodejs.png",
             "/AboutMe/motion.png",
             "/AboutMe/figma.png",
             "/AboutMe/git.png",
             "/AboutMe/github.png",
             "/AboutMe/vercel.png",
-            "/AboutMe/postman.png",
             "/AboutMe/webstorm.png"
         ],
         "caseSolved": {
-            "challenge": "Premium HPL brand required a high-end digital feel.",
-            "approach": "Used TypeScript, GSAP, and refined typography for a luxury interior tone.",
-            "impact": "Website quality now matches product positioning."
+            "challenge": "HIMMEL needed a premium digital experience that could reflect the quality, innovation, and national positioning of its High Pressure Laminate products.",
+            "approach": "I began by translating the brand positioning into an editorial information architecture, then implemented the React and TypeScript frontend, shaped the responsive design system, built the motion language with GSAP and Motion, tested the content and API touchpoints, and prepared the site for production.",
+            "techStack": "React, GSAP, TypeScript, Tailwind CSS, Vite, MongoDB, Cloudinary, Node.js, Motion, Figma, Git, GitHub, Vercel, and WebStorm supported the build, integration checks, and delivery process.",
+            "innovation": "The site combines premium typography, controlled motion, and a product-led narrative so the digital experience communicates material quality before visitors reach technical details.",
+            "impact": "HIMMEL's online presence now aligns more closely with its premium product positioning and gives interior audiences a stronger brand experience."
         }
     },
     {
@@ -298,20 +324,25 @@
             "/AboutMe/reactjs.png",
             "/AboutMe/gsap.png",
             "/AboutMe/typescript.png",
+            "/AboutMe/cloudinary.png",
             "/AboutMe/tailwindcss.png",
             "/AboutMe/vite.png",
+            "/AboutMe/nodejs.png",
+            "/AboutMe/expressjs.png",
+            "/AboutMe/mongodb.png",
             "/AboutMe/motion.png",
             "/AboutMe/figma.png",
             "/AboutMe/git.png",
             "/AboutMe/github.png",
-            "/AboutMe/postman.png",
             "/AboutMe/vercel.png",
             "/AboutMe/webstorm.png"
         ],
         "caseSolved": {
-            "challenge": "New chemical supplier had to earn trust quickly online.",
-            "approach": "Built an animated company profile highlighting polyurethane expertise.",
-            "impact": "Foam manufacturers get proof of capability on first visit."
+            "challenge": "As a newer specialized chemical supplier, Alamas Niaga Gemilang needed to establish technical credibility quickly with polyurethane foam manufacturers.",
+            "approach": "I structured the content around industry needs and technical capability, translated the positioning into a responsive React experience, implemented the TypeScript frontend with motion-led sections, validated the integration points, and completed the production handoff.",
+            "techStack": "React, GSAP, TypeScript, Cloudinary, Tailwind CSS, Vite, Node.js, Express.js, MongoDB, Motion, Figma, Git, GitHub, Vercel, and WebStorm were used across the implementation and QA workflow.",
+            "innovation": "The experience uses progressive technical storytelling and purposeful animation to make a complex chemical offering easier to understand without removing its industrial credibility.",
+            "impact": "Foam manufacturers can recognize Alamas's specialization and capability earlier in the buying journey, strengthening the first point of contact."
         }
     },
     {
@@ -322,25 +353,25 @@
         "description": "Providing premium quality baby bedding and family towels since 2001. Certified by SNI, OEKO-TEX®, and K3L.",
         "link": "https://katiga.id/",
         "techIcons": [
-            "/AboutMe/reactjs.png",
+            "/AboutMe/nextjs.png",
             "/AboutMe/gsap.png",
             "/AboutMe/typescript.png",
-            "/AboutMe/nodejs.png",
-            "/AboutMe/expressjs.png",
+            "/AboutMe/supabase.png",
+            "/AboutMe/cloudinary.webp",
+            "/AboutMe/postgresSQL.png",
             "/AboutMe/tailwindcss.png",
-            "/AboutMe/vite.png",
-            "/AboutMe/mongodb.png",
-            "/AboutMe/motion.png",
             "/AboutMe/figma.png",
             "/AboutMe/git.png",
             "/AboutMe/github.png",
             "/AboutMe/vercel.png",
-            "/AboutMe/webstorm.png"
+            "/AboutMe/vscode.png"
         ],
         "caseSolved": {
-            "challenge": "Heritage bedding brand needed modern e-commerce with certifications.",
-            "approach": "Developed a full-stack shop surfacing SNI and OEKO-TEX credentials.",
-            "impact": "Online channel supports a brand trusted since 2001."
+            "challenge": "Katiga needed to modernize its e-commerce experience while preserving the trust built through its bedding and towel products, certifications, and long operating history.",
+            "approach": "I mapped the catalog and shopping journey, designed the product and trust-content hierarchy, built the Next.js and TypeScript frontend with Supabase services and PostgreSQL data, integrated responsive interactions, and carried the store through testing and deployment preparation.",
+            "techStack": "Next.js, GSAP, TypeScript, Supabase, Cloudinary, PostgreSQL, Tailwind CSS, Figma, Git, GitHub, Vercel, and VS Code support the full-stack commerce experience.",
+            "innovation": "Certification-led product storytelling brings SNI, OEKO-TEX, and K3L proof closer to the purchase decision, combining e-commerce clarity with the reassurance of a heritage brand.",
+            "impact": "Katiga gains a stronger online channel that helps customers evaluate quality and certification before purchasing, while preserving the credibility built since 2001."
         }
     },
     {
@@ -364,9 +395,11 @@
             "/AboutMe/webstorm.png"
         ],
         "caseSolved": {
-            "challenge": "Service process for bathroom waterproofing was unclear to leads.",
-            "approach": "Mapped Reno Express steps into a structured, conversion-focused UI.",
-            "impact": "Singapore homeowners understand the anti-leak process before inquiry."
+            "challenge": "Reno Express needed to make its permanent waterproofing process and guaranteed outcomes understandable to Singapore homeowners before they submitted an inquiry.",
+            "approach": "I converted the service methodology into a clear step-by-step content flow, designed the responsive React interface, implemented TypeScript and motion interactions, structured the conversion points, and refined the experience through cross-device QA.",
+            "techStack": "React, GSAP, TypeScript, Tailwind CSS, Vite, Motion, Figma, Git, GitHub, Vercel, and WebStorm were used for the frontend, animation, responsive system, and delivery workflow.",
+            "innovation": "The site makes an invisible waterproofing result tangible by visualizing the standardized process, reducing uncertainty through clear sequencing and outcome-focused content.",
+            "impact": "Singapore homeowners can understand the anti-leak method, expected result, and next step before contacting Reno Express."
         }
     },
     {
@@ -377,13 +410,12 @@
         "description": "Sanxin Studio adalah agen kreatif berbasis di Bekasi yang berfokus pada produksi konten video, manajemen media sosial, dan strategi pemasaran digital.",
         "link": "https://www.sanxinstudio.com",
         "techIcons": [
-            "/AboutMe/reactjs.png",
+            "/AboutMe/nextjs.png",
             "/AboutMe/gsap.png",
             "/AboutMe/typescript.png",
             "/AboutMe/nodejs.png",
             "/AboutMe/expressjs.png",
             "/AboutMe/tailwindcss.png",
-            "/AboutMe/vite.png",
             "/AboutMe/mongodb.png",
             "/AboutMe/figma.png",
             "/AboutMe/git.png",
@@ -393,9 +425,11 @@
             "/AboutMe/vscode.png"
         ],
         "caseSolved": {
-            "challenge": "Creative agency needed portfolio delivery plus manageable media.",
-            "approach": "Built a full-stack site with Cloudinary-backed video and social proof.",
-            "impact": "Clients see production work and digital strategy in one place."
+            "challenge": "Sanxin Studio needed a polished digital presence that could present creative production, social media management, and digital marketing as one coherent service offering.",
+            "approach": "I translated the agency's services into a content and portfolio model, built the React and TypeScript frontend with Node/Express and MongoDB support, integrated media delivery, designed the motion-led presentation, and carried the build through responsive QA and deployment readiness.",
+            "techStack": "Next.js, GSAP, TypeScript, Node.js, Express.js, Tailwind CSS, MongoDB, Figma, Git, GitHub, Vercel, Cloudinary, and VS Code were used across the full-stack and media workflow.",
+            "innovation": "Cloudinary-backed media presentation and scroll-based storytelling let the agency show the quality of its work directly, while the information architecture connects each service to a clear business outcome.",
+            "impact": "Potential clients can understand Sanxin Studio's production capability, social strategy, and marketing services from one focused digital experience."
         }
     },
     {
@@ -421,9 +455,11 @@
             "/AboutMe/vscode.png"
         ],
         "caseSolved": {
-            "challenge": "Indonesia lacked a dedicated community hub for perfume enthusiasts.",
-            "approach": "Launched a community platform with MongoDB and member-first features.",
-            "impact": "Enthusiasts can discuss, share, and explore fragrances together."
+            "challenge": "Mewangi needed a dedicated home for Indonesia's perfume enthusiasts to share knowledge, discuss fragrance, and build a stronger community identity.",
+            "approach": "I shaped the community information architecture around discovery, discussion, and content contribution, then built the React and TypeScript frontend with Node/Express and MongoDB support, added the motion and media presentation layer, tested the key member journeys, and prepared the platform for production use.",
+            "techStack": "React, TypeScript, GSAP, Node.js, Express.js, Tailwind CSS, Vite, MongoDB, Figma, Git, GitHub, Cloudinary, and VS Code support the community, media, and delivery workflows.",
+            "innovation": "The platform treats fragrance knowledge as community content, combining editorial discovery with member-oriented interaction so enthusiasts can move naturally between learning, sharing, and discussion.",
+            "impact": "Indonesian perfume enthusiasts have a focused space to explore fragrances, exchange perspectives, and participate in a community built around a shared interest."
         }
     },
     {
@@ -437,21 +473,19 @@
             "/AboutMe/reactjs.png",
             "/AboutMe/typescript.png",
             "/AboutMe/gsap.png",
-            "/AboutMe/nodejs.png",
-            "/AboutMe/expressjs.png",
             "/AboutMe/tailwindcss.png",
             "/AboutMe/vite.png",
-            "/AboutMe/mongodb.png",
             "/AboutMe/figma.png",
             "/AboutMe/git.png",
             "/AboutMe/github.png",
-            "/AboutMe/cloudinary.png",
             "/AboutMe/vscode.png"
         ],
         "caseSolved": {
-            "challenge": "Maritime technical services were hard to explain to ship operators.",
-            "approach": "Shipped a bilingual corporate site with service-specific credibility blocks.",
-            "impact": "Maritime clients understand turbocharger and engine overhaul scope faster."
+            "challenge": "Navale Balancing's specialized maritime services needed to be communicated clearly to ship operators who must quickly understand technical scope, experience, and capability.",
+            "approach": "I organized the service portfolio around real operator questions, designed the responsive React and TypeScript experience, implemented Node/Express and MongoDB-backed functionality, added motion and media support, and completed the build with cross-device testing and production preparation.",
+            "techStack": "React, TypeScript, GSAP, Tailwind CSS, Vite, Figma, Git, GitHub, and VS Code were used to deliver the full-stack maritime company profile.",
+            "innovation": "Technical services are presented through service-specific credibility blocks and visual evidence, turning complex overhaul and calibration work into a clear evaluation path for maritime decision-makers.",
+            "impact": "Maritime clients can understand Navale Balancing's turbocharger, engine, pump, governor, and electrical capabilities faster before initiating a project discussion."
         }
     },
     {
@@ -459,27 +493,29 @@
         "type": "Full Stack Web Development",
         "category": "E-Commerce",
         "title": "GeekyTech",
-        "description": "",
+        "description": "GeekyTech dimulai dari kecintaan mendalam terhadap teknologi dan keinginan untuk berbagi akses ke gadget terbaik dengan harga yang adil. Kini, dengan lebih dari 23.000 transaksi yang telah diselesaikan, kami hadir dengan platform sendiri untuk memberikan pengalaman belanja yang lebih baik",
         "link": "https://www.geeky.id",
         "techIcons": [
-            "/AboutMe/reactjs.png",
+            "/AboutMe/nextjs.png",
             "/AboutMe/typescript.png",
             "/AboutMe/gsap.png",
-            "/AboutMe/nodejs.png",
-            "/AboutMe/expressjs.png",
+            "/AboutMe/supabase.png",
+            "/AboutMe/Cloudflare.png",
+            "/AboutMe/shadcn.webp",
+            "/AboutMe/postgresSQL.png",
             "/AboutMe/tailwindcss.png",
-            "/AboutMe/vite.png",
-            "/AboutMe/mongodb.png",
             "/AboutMe/figma.png",
             "/AboutMe/git.png",
             "/AboutMe/github.png",
-            "/AboutMe/cloudinary.png",
+            "/AboutMe/cloudinary.webp",
             "/AboutMe/vscode.png"
         ],
         "caseSolved": {
-            "challenge": "Tech retail needed a fast storefront for varied product lines.",
-            "approach": "Built a performant MERN e-commerce experience with GSAP highlights.",
-            "impact": "Shoppers browse gadgets with smoother product discovery."
+            "challenge": "GeekyTech needed an e-commerce experience capable of presenting varied technology products while keeping discovery, trust, and purchase intent clear.",
+            "approach": "I modelled the product and shopping requirements, designed the catalog hierarchy, implemented the React and TypeScript frontend with Supabase and PostgreSQL support, refined the GSAP motion layer, and carried the storefront through responsive testing and production preparation.",
+            "techStack": "Next.js, TypeScript, GSAP, Supabase, Cloudflare, shadcn/ui, PostgreSQL, Tailwind CSS, Figma, Git, GitHub, Cloudinary, and VS Code support the full-stack commerce and media workflow.",
+            "innovation": "The storefront combines structured product discovery with purposeful motion and media presentation, making a broad technology catalog feel easier to scan without sacrificing performance.",
+            "impact": "Shoppers receive a clearer path from discovering technology products to evaluating and continuing toward purchase."
         }
     },
     {
@@ -490,24 +526,21 @@
         "description": "PT. Arta Prima Glassindo (NADAZ) — spesialis kaca tempered dan aluminium premium di Jabodetabek. Melayani glassboard korporat, cermin gym, partisi kaca, dan pintu aluminium untuk korporat, instansi pemerintah, serta proyek komersial sejak 2016.",
         "link": "https://www.nadaz.co.id",
         "techIcons": [
-            "/AboutMe/reactjs.png",
+            "/AboutMe/nextjs.png",
             "/AboutMe/typescript.png",
             "/AboutMe/gsap.png",
-            "/AboutMe/nodejs.png",
-            "/AboutMe/expressjs.png",
             "/AboutMe/tailwindcss.png",
-            "/AboutMe/vite.png",
-            "/AboutMe/mongodb.png",
             "/AboutMe/figma.png",
             "/AboutMe/git.png",
             "/AboutMe/github.png",
-            "/AboutMe/cloudinary.png",
             "/AboutMe/vscode.png"
         ],
         "caseSolved": {
-            "challenge": "Glass and aluminium contractor projects were invisible online.",
-            "approach": "Designed a corporate site showcasing tempered glass and aluminium work.",
-            "impact": "Corporate and government buyers can evaluate capability before contact."
+            "challenge": "NADAZ needed to make its tempered glass, aluminium, and project capabilities visible to corporate, government, and commercial buyers online.",
+            "approach": "I translated the product and project requirements into a structured company profile, built the React and TypeScript frontend with Node/Express and MongoDB support, integrated optimized project media, designed the motion and responsive behavior, and completed the path from implementation through production QA.",
+            "techStack": "Next.js, TypeScript, GSAP, Tailwind CSS, Figma, Git, GitHub, and VS Code were used across the full-stack build, media handling, and delivery workflow.",
+            "innovation": "The site uses project-led proof and visual material storytelling to help buyers evaluate the contractor's capability before they need to request a quotation or start a formal conversation.",
+            "impact": "Corporate, government, and commercial buyers can understand NADAZ's glass and aluminium capabilities with greater confidence before contact."
         }
     },
     {
@@ -518,24 +551,21 @@
         "description": "CV. Kaemba Buntusu Indonesia — eksportir komoditas pertanian dari Sulawesi. Menghubungkan kelapa, kopra, cengkeh, lada, dan kakao dari petani lokal ke pasar Asia, Timur Tengah, dan Eropa melalui pelabuhan Makassar.",
         "link": "https://www.kaembabuntusu.com",
         "techIcons": [
-            "/AboutMe/reactjs.png",
+            "/AboutMe/nextjs.png",
             "/AboutMe/typescript.png",
             "/AboutMe/gsap.png",
-            "/AboutMe/nodejs.png",
-            "/AboutMe/expressjs.png",
             "/AboutMe/tailwindcss.png",
-            "/AboutMe/vite.png",
-            "/AboutMe/mongodb.png",
-            "/AboutMe/figma.png",
             "/AboutMe/git.png",
             "/AboutMe/github.png",
-            "/AboutMe/cloudinary.png",
+            "/AboutMe/cloudinary.webp",
             "/AboutMe/vscode.png"
         ],
         "caseSolved": {
-            "challenge": "Agricultural exporter needed credibility for international buyers.",
-            "approach": "Created an export-focused site for coconut, cocoa, and spice commodities.",
-            "impact": "Global buyers see supply chain reach from Sulawesi to major ports."
+            "challenge": "CV. Kaemba Buntusu Indonesia needed a credible digital presence that could communicate its export capability, product quality, origin story, and supply-chain reach to international buyers.",
+            "approach": "I took the project from discovery to production: translating the client's business goals into the information architecture, content hierarchy, page structure, and responsive user experience; modelling the commodity catalogue and export specifications; then implementing, testing, optimizing, and deploying the complete application. The build uses Next.js, TypeScript, Tailwind CSS, GSAP, Supabase, Cloudinary, Git/GitHub, and a production-ready Vercel workflow.",
+            "techStack": "Next.js, TypeScript, GSAP, Tailwind CSS, Git, GitHub, Cloudinary, and VS Code support the application foundation, motion system, responsive design, optimized media, and delivery workflow.",
+            "innovation": "I shaped the site as an editorial export experience rather than a generic company profile: animated preloader and scroll reveals, smooth scrolling, interactive product imagery, structured product detail pages, clear inquiry and WhatsApp conversion paths, light/dark theme support, and SEO-focused metadata, sitemap, and structured data.",
+            "impact": "The result gives global buyers a clear path from understanding Kaemba's origin and capabilities to evaluating export-grade commodities and starting a formal inquiry, strengthening trust before the first conversation."
         }
     }
 ]

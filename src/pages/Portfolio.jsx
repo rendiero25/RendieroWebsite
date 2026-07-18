@@ -154,7 +154,7 @@ const Portfolio = () => {
             </div>
 
             <main ref={scrollRef} className="relative z-10 min-h-screen overflow-y-auto scrollbar-hide">
-                <div className="mx-auto flex min-h-screen max-w-6xl flex-col px-6 pb-16 pt-28 lg:px-8 lg:pt-32">
+                <div className="mx-auto flex min-h-screen max-w-6xl flex-col px-6 pb-16 pt-28 lg:px-8 lg:pt-32 2xl:max-w-7xl">
                     <motion.header
                         initial={shouldReduceMotion ? false : { opacity: 0, y: -12 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -205,7 +205,7 @@ const Portfolio = () => {
 
                     <div
                         ref={gridRef}
-                        className="grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(280px,380px)] lg:gap-12"
+                        className="grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(280px,380px)] lg:gap-12 2xl:grid-cols-[minmax(0,1fr)_minmax(440px,520px)]"
                     >
                         <section aria-label="Project list" className="min-w-0">
                             {filtered.map((project, index) => (

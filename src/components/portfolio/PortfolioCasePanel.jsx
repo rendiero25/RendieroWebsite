@@ -5,6 +5,8 @@ const ENTRANCE_EASE = [0.16, 1, 0.3, 1];
 const CASE_FIELDS = [
     { key: "challenge", label: "Challenge" },
     { key: "approach", label: "Approach" },
+    { key: "techStack", label: "Tech stack" },
+    { key: "innovation", label: "Innovation" },
     { key: "impact", label: "Impact" },
 ];
 
@@ -61,11 +63,22 @@ const PortfolioCasePanel = ({ project, onClose, titleId }) => {
                             <p className="text-white/60 text-sm">{project.type}</p>
                         </div>
 
+                        {project.description ? (
+                            <div className="flex flex-col gap-2">
+                                <p className="text-white/50 text-xs font-medium uppercase tracking-wider">
+                                    Project overview
+                                </p>
+                                <p className="text-white/80 text-sm leading-relaxed">
+                                    {project.description}
+                                </p>
+                            </div>
+                        ) : null}
+
                         <div className="flex flex-col gap-4">
                             <p className="text-white/50 text-xs font-medium uppercase tracking-wider">
                                 Case solved
                             </p>
-                            {CASE_FIELDS.map((field, index) => (
+                            {CASE_FIELDS.filter((field) => project.caseSolved?.[field.key]).map((field, index) => (
                                 <motion.div
                                     key={field.key}
                                     initial={shouldReduceMotion ? false : { opacity: 0, x: 8 }}
